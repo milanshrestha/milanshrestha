@@ -179,10 +179,10 @@ Building software with a philosophy:
       <br>Cmder
     </td>
     <td align="center" width="96">
-      <a href="#">
+      <a href="https://web.dev/">
         <img src="./images/html-css-javascript.png" width="48" height="48" alt="Linux" />
       </a>
-      <br>HTML CSS JS
+      <br>Web.dev
     </td>
     <td align="center" width="96">
       <a href="https://gohugo.io/">
