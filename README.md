@@ -179,10 +179,10 @@ Building software with a philosophy:
       <br>Cmder
     </td>
     <td align="center" width="96">
-      <a href="https://aerynos.com">
-        <img src="./images/aerynos.svg" width="48" height="48" alt="Linux" />
+      <a href="#">
+        <img src="./images/html-css-javascript.png" width="48" height="48" alt="Linux" />
       </a>
-      <br>AerynOS
+      <br>HTML CSS JS
     </td>
     <td align="center" width="96">
       <a href="https://gohugo.io/">
