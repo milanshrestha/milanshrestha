@@ -173,10 +173,10 @@ Building software with a philosophy:
       <br>11ty
     </td>
     <td align="center" width="96">
-      <a href="https://kde.org/plasma-desktop/">
-        <img src="./images/kdeplasma.svg" width="48" height="48" alt="Desktop environment" />
+      <a href="https://cmder.app/">
+        <img src="./images/Cmder-Logo.png" width="48" height="48" alt="Desktop environment" />
       </a>
-      <br>KDE Plasma
+      <br>Cmder
     </td>
     <td align="center" width="96">
       <a href="https://aerynos.com">
