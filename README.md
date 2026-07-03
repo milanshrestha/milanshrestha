@@ -156,7 +156,7 @@ Building software with a philosophy:
   <tr>
     <td align="center" width="96">
       <a href="https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_T470">
-        <img src="./images/lenevo-t470.jpg" width="48" height="48" alt="Thinkpad t470" />
+        <img src="./images/lenevo-t470.png" width="48" height="48" alt="Thinkpad t470" />
       </a>
       <br>Thinkpad
     </td>
