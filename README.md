@@ -167,10 +167,10 @@ Building software with a philosophy:
       <br>VSCode
     </td>
     <td align="center" width="96">
-      <a href="https://kde.org">
-        <img src="./images/kde.svg" width="48" height="48" alt="Community" />
+      <a href="https://www.11ty.dev/">
+        <img src="./images/11ty.png" width="48" height="48" alt="Community" />
       </a>
-      <br>KDE
+      <br>11ty
     </td>
     <td align="center" width="96">
       <a href="https://kde.org/plasma-desktop/">
