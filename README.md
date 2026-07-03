@@ -148,6 +148,8 @@ Building software with a philosophy:
 
 > *"Build technology that people genuinely need."*
 
+---
+
 > Tools, languages, and other things that I use!
 
 <table>
