@@ -162,7 +162,7 @@ Building software with a philosophy:
     </td>
     <td align="center" width="96">
       <a href="https://code.visualstudio.com/">
-        <img src="./images/visualstudiocode.svg" width="48" height="48" alt="" />
+        <img src="./images/visualstudiocode.png" width="48" height="48" alt="" />
       </a>
       <br>VSCode
     </td>
