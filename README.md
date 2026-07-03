@@ -218,7 +218,7 @@ Building software with a philosophy:
     </td>
     <td align="center" width="96">
       <a href="https://debian.org" >
-        <img src="./images/debian.svg" width="48" height="48" alt="" />
+        <img src="./images/debian.png" width="48" height="48" alt="" />
       </a>
       <br>Debian
     </td>
