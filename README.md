@@ -235,10 +235,10 @@ Building software with a philosophy:
       <br>Laragon
     </td>
     <td align="center" width="96">
-      <a href="https://starlight.astro.build">
-        <img src="./images/starlight.webp" width="48" height="48" alt="" />
+      <a href="https://www.mongodb.com/" target="_blank" >
+        <img src="./images/mongodb.svg" width="48" height="48" alt="" />
       </a>
-      <br>Astro Starlight
+      <br>MongoDB
     </td>
     <td align="center"  width="96">
       <a href="https://docs.ansible.com/">
