@@ -203,10 +203,10 @@ Building software with a philosophy:
       <br>Cisco
     </td>
     <td align="center" width="96">
-      <a href="https://tabby.sh/">
-        <img src="./images/tabby.svg" width="48" height="48" alt="" />
+      <a href="https://https://www.fortinet.com/" target="_blank">
+        <img src="./images/fortinet.svg" width="48" height="48" alt="" />
       </a>
-      <br>Tabby
+      <br>Fortinet
     </td>
   </tr>
   <tr>
