@@ -168,7 +168,7 @@ Building software with a philosophy:
     </td>
     <td align="center" width="96">
       <a href="https://www.11ty.dev/">
-        <img src="./images/11ty.png" width="48" height="48" alt="Community" />
+        <img src="./images/eleventy.svg" width="48" height="48" alt="Community" />
       </a>
       <br>11ty
     </td>
