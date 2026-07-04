@@ -211,10 +211,10 @@ Building software with a philosophy:
   </tr>
   <tr>
     <td align="center" width="96"> 
-      <a href="#" >
-        <img src="./images/htmlcss.png" width="48" height="48" alt="" />
+      <a href="https://ubuntu.com/" target="_blank">
+        <img src="./images/ubuntu.svg" width="48" height="48" alt="" />
       </a>
-      <br>HTML/CSS
+      <br>Ubuntu
     </td>
     <td align="center" width="96">
       <a href="https://debian.org" >
