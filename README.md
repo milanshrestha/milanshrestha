@@ -208,6 +208,12 @@ Building software with a philosophy:
       </a>
       <br>Fortinet
     </td>
+    <td align="center" width="96">
+      <a href="https://https://www.dell.com/" target="_blank">
+        <img src="./images/dell.svg" width="48" height="48" alt="" />
+      </a>
+      <br>Dell
+    </td>
   </tr>
   <tr>
     <td align="center" width="96"> 
