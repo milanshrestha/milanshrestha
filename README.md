@@ -188,7 +188,7 @@ Building software with a philosophy:
       <a href="https://www.vmware.com/" target="_blank">
         <img src="./images/vmware.svg" width="48" height="48" alt="" />
       </a>
-      <br>Hugo
+      <br>VMware
     </td>
     <td align="center" width="96">
       <a href="https://darkreader.org/" >
