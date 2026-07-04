@@ -248,7 +248,7 @@ Building software with a philosophy:
     </td>
     <td align="center" width="96">
       <a href="https://expressjs.com/" target="_blank" >
-        <img src="./images/openscap.png" width="48" height="48" alt="" />
+        <img src="./images/express.svg" width="48" height="48" alt="" />
       </a>
       <br>ExpressJS
     </td>
