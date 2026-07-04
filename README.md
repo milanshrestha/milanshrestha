@@ -197,10 +197,10 @@ Building software with a philosophy:
       <br>Mikrotik
     </td>
     <td align="center" width="96">
-      <a href="https://saltproject.io">
-        <img src="./images/salt.svg" width="48" height="48" alt="" />
+      <a href="https://https://www.cisco.com/" target="_blank">
+        <img src="./images/cisco.svg" width="48" height="48" alt="" />
       </a>
-      <br>Salt
+      <br>Cisco
     </td>
     <td align="center" width="96">
       <a href="https://tabby.sh/">
