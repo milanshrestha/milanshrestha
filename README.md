@@ -259,10 +259,10 @@ Building software with a philosophy:
       <br>NodeJS
     </td>
     <td align="center" width="96">
-      <a href="https://www.uyuni-project.org">
-        <img src="./images/uyuni.png" width="48" height="48" alt="" />
+      <a href="https://developers.google.com/" target="_blank" >
+        <img src="./images/google-developers.svg" width="48" height="48" alt="" />
       </a>
-      <br>Uyuni
+      <br>Dev.Google
     </td>
   </tr>
 </table>
