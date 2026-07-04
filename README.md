@@ -182,7 +182,7 @@ Building software with a philosophy:
       <a href="https://web.dev/">
         <img src="./images/html-css-javascript.png" width="48" height="48" alt="Linux" />
       </a>
-      <br>Web.dev
+      <br>Web.Dev
     </td>
     <td align="center" width="96">
       <a href="https://www.vmware.com/" target="_blank">
