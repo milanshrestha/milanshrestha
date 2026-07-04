@@ -217,16 +217,16 @@ Building software with a philosophy:
       <br>Ubuntu
     </td>
     <td align="center" width="96">
-      <a href="https://debian.org" >
+      <a href="https://debian.org" target="_blank" >
         <img src="./images/debian.png" width="48" height="48" alt="" />
       </a>
       <br>Debian
     </td>
     <td align="center"  width="96">
-      <a href="#">
-        <img src="./images/cloudserver.png" width="48" height="48" alt="" />
+      <a href="https://www.openbsd.org/" target="_blank">
+        <img src="./images/openbsd.svg" width="48" height="48" alt="" />
       </a>
-      <br>Cloud servers
+      <br>OpenBSD
     </td>
     <td align="center"  width="96">
       <a href="https://fishshell.com/">
