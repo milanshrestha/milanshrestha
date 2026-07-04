@@ -191,8 +191,8 @@ Building software with a philosophy:
       <br>VMware
     </td>
     <td align="center" width="96">
-      <a href="https://darkreader.org/" >
-        <img src="./images/darkreader.svg" width="48" height="48" alt="" />
+      <a href="https://mikrotik.com/" target="_blank">
+        <img src="./images/Mikrotik.svg" width="48" height="48" alt="" />
       </a>
       <br>Dark Reader
     </td>
