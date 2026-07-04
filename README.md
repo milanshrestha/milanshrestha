@@ -241,22 +241,22 @@ Building software with a philosophy:
       <br>MongoDB
     </td>
     <td align="center"  width="96">
-      <a href="https://docs.ansible.com/">
-        <img src="./images/ansible.svg" width="48" height="48" alt="" />
+      <a href="https://angular.dev/" target="_blank" >
+        <img src="./images/angular.svg" width="48" height="48" alt="" />
       </a>
-      <br>Ansible
+      <br>Angular
     </td>
     <td align="center" width="96">
-      <a href="https://www.open-scap.org">
+      <a href="https://expressjs.com/" target="_blank" >
         <img src="./images/openscap.png" width="48" height="48" alt="" />
       </a>
-      <br>Openscap
+      <br>ExpressJS
     </td>
     <td align="center" width="96">
-      <a href="https://github.com/PowerShell/PowerShell" >
-        <img src="./images/powershell.svg" width="48" height="48" alt="" />
+      <a href="https://https://nodejs.org/" target="_blank" >
+        <img src="./images/nodejs.svg" width="48" height="48" alt="" />
       </a>
-      <br>PowerShell
+      <br>NodeJS
     </td>
     <td align="center" width="96">
       <a href="https://www.uyuni-project.org">
