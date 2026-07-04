@@ -229,10 +229,10 @@ Building software with a philosophy:
       <br>OpenBSD
     </td>
     <td align="center"  width="96">
-      <a href="https://fishshell.com/">
-        <img src="./images/fish.svg" width="48" height="48" alt="" />
+      <a href="https://laragon.org/" target="_blank" >
+        <img src="./images/laragon.svg" width="48" height="48" alt="" />
       </a>
-      <br>Fish
+      <br>Laragon
     </td>
     <td align="center" width="96">
       <a href="https://starlight.astro.build">
