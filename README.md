@@ -264,5 +264,11 @@ Building software with a philosophy:
       </a>
       <br>Dev.Google
     </td>
+    <td align="center" width="96">
+      <a href="https://www.hpe.com/" target="_blank" >
+        <img src="./images/hpe.svg" width="48" height="48" alt="" />
+      </a>
+      <br>HPE
+    </td>
   </tr>
 </table>
