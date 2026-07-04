@@ -194,7 +194,7 @@ Building software with a philosophy:
       <a href="https://mikrotik.com/" target="_blank">
         <img src="./images/Mikrotik.svg" width="48" height="48" alt="" />
       </a>
-      <br>Dark Reader
+      <br>Mikrotik
     </td>
     <td align="center" width="96">
       <a href="https://saltproject.io">
