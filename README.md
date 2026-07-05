@@ -2,11 +2,15 @@
 
 ## Technology Professional | Product Builder | Systems Thinker
 
-I am a self-taught technology professional from Nepal who enjoys building software that solves practical, everyday problems.
+I'm a self-taught technology professional from Nepal with a passion for building practical solutions that improve everyday life.
 
-My interests extend beyond writing code. I enjoy understanding how people interact with technology, identifying inefficiencies, and designing products that make work and life simpler.
+My journey into technology wasn't conventional. I began my career in hospitality as a Front Office Receptionist, where I naturally gravitated toward solving technical problems. Whether it was troubleshooting computers, networks, or software, I was always eager to learn beyond my role. Through continuous self-learning, hands-on experience, and taking on increasing technical responsibilities, I transitioned into the hotel's IT department and eventually grew into an IT Manager.
 
-Currently, I'm building **Khaancho**, a classified advertising platform focused on creating a better local marketplace experience while continuously exploring AI-assisted software development and modern web technologies.
+Today, I combine my experience in IT operations, software development, and product thinking to create technology that solves real-world problems. I enjoy understanding how people interact with systems, identifying inefficiencies, and designing solutions that are simple, scalable, and meaningful.
+
+I'm currently building **Khaancho**—a next-generation classified advertising platform—and continuously exploring AI-assisted software development, automation, and modern web technologies.
+
+> *"I believe technology should simplify life, empower people, and solve problems that truly matter."*
 
 ---
 
