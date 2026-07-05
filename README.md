@@ -1,4 +1,4 @@
-# Hi, I'm Milan Shrestha 👋
+# Hi, I'm Milan — you can call me M. 🦉
 
 ## Technology Professional | Product Builder | Systems Thinker
 
