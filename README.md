@@ -172,94 +172,94 @@ from layout and brand system to launch and handover.
 
 <table>
   <tr>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.dell.com/" target="_blank"><img src="./images/dell.svg" width="48" height="48" alt="Dell" /></a>
       <br>Dell
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://debian.org" target="_blank"><img src="./images/debian.png" width="48" height="48" alt="Debian" /></a>
       <br>Debian
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.hpe.com/" target="_blank"><img src="./images/hpe.svg" width="48" height="48" alt="HPE" /></a>
       <br>HPE
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.openbsd.org/" target="_blank"><img src="./images/openbsd.svg" width="48" height="48" alt="OpenBSD" /></a>
       <br>OpenBSD
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_T470" target="_blank"><img src="./images/lenevo-t470.png" width="48" height="48" alt="Thinkpad" /></a>
       <br>Thinkpad
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://ubuntu.com/" target="_blank"><img src="./images/ubuntu.svg" width="48" height="48" alt="Ubuntu" /></a>
       <br>Ubuntu
     </td>
   </tr>
   <tr>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.11ty.dev/" target="_blank"><img src="./images/eleventy.svg" width="48" height="48" alt="11ty" /></a>
       <br>11ty
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://angular.dev/" target="_blank"><img src="./images/angular.svg" width="48" height="48" alt="Angular" /></a>
       <br>Angular
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://cmder.app/" target="_blank"><img src="./images/Cmder-Logo.png" width="48" height="48" alt="Cmder" /></a>
       <br>Cmder
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://expressjs.com/" target="_blank"><img src="./images/express.svg" width="48" height="48" alt="ExpressJS" /></a>
       <br>ExpressJS
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://laragon.org/" target="_blank"><img src="./images/laragon.svg" width="48" height="48" alt="Laragon" /></a>
       <br>Laragon
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.mongodb.com/" target="_blank"><img src="./images/mongodb.svg" width="48" height="48" alt="MongoDB" /></a>
       <br>MongoDB
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://nodejs.org/" target="_blank"><img src="./images/nodejs.svg" width="48" height="48" alt="NodeJS" /></a>
       <br>NodeJS
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.squarespace.com/" target="_blank"><img src="./images/squarespace.svg" width="48" height="48" alt="Squarespace" /></a>
       <br>Squarespace
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://code.visualstudio.com/" target="_blank"><img src="./images/vscode.svg" width="48" height="48" alt="VSCode" /></a>
       <br>VSCode
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://web.dev/" target="_blank"><img src="./images/html-css-javascript.png" width="48" height="48" alt="Web.Dev" /></a>
       <br>Web.Dev
     </td>
   </tr>
   <tr>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.cisco.com/" target="_blank"><img src="./images/cisco.svg" width="48" height="48" alt="Cisco" /></a>
       <br>Cisco
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://developers.google.com/" target="_blank"><img src="./images/google-developers.svg" width="48" height="48" alt="Dev.Google" /></a>
       <br>Dev.Google
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.fortinet.com/" target="_blank"><img src="./images/fortinet.svg" width="48" height="48" alt="Fortinet" /></a>
       <br>Fortinet
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://mikrotik.com/" target="_blank"><img src="./images/Mikrotik.svg" width="48" height="48" alt="Mikrotik" /></a>
       <br>Mikrotik
     </td>
-    <td align="center" width="96">
+    <td align="center" valign="top" width="96">
       <a href="https://www.vmware.com/" target="_blank"><img src="./images/vmware.svg" width="48" height="48" alt="VMware" /></a>
       <br>VMware
     </td>
-    <td align="center" width="96"></td>
+    <td align="center" valign="top" width="96"></td>
   </tr>
 </table>
