@@ -170,14 +170,114 @@ from layout and brand system to launch and handover.
 
 > Tools, languages, and other things that I use!
 
-<table>
-  <tr>
-    <td align="center" width="96">
-      <a href="https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_T470">
-        <img src="./images/lenevo-t470.png" width="48" height="48" alt="Thinkpad t470" />
-      </a>
-      <br>Thinkpad
-    </td>
+<div align="center" style="display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:14px; max-width:640px; margin:0 auto;">
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.dell.com/" target="_blank"><img src="./images/dell.svg" width="48" height="48" alt="Dell" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Dell</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.hpe.com/" target="_blank"><img src="./images/hpe.svg" width="48" height="48" alt="HPE" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">HPE</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_T470"><img src="./images/lenevo-t470.png" width="48" height="48" alt="Thinkpad" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Thinkpad</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://debian.org" target="_blank"><img src="./images/debian.png" width="48" height="48" alt="Debian" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Debian</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.openbsd.org/" target="_blank"><img src="./images/openbsd.svg" width="48" height="48" alt="OpenBSD" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">OpenBSD</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://ubuntu.com/" target="_blank"><img src="./images/ubuntu.svg" width="48" height="48" alt="Ubuntu" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Ubuntu</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.11ty.dev/" target="_blank"><img src="./images/eleventy.svg" width="48" height="48" alt="11ty" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">11ty</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://angular.dev/" target="_blank"><img src="./images/angular.svg" width="48" height="48" alt="Angular" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Angular</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://cmder.app/" target="_blank"><img src="./images/Cmder-Logo.png" width="48" height="48" alt="Cmder" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Cmder</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://expressjs.com/" target="_blank"><img src="./images/express.svg" width="48" height="48" alt="ExpressJS" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">ExpressJS</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://laragon.org/" target="_blank"><img src="./images/laragon.svg" width="48" height="48" alt="Laragon" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Laragon</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.mongodb.com/" target="_blank"><img src="./images/mongodb.svg" width="48" height="48" alt="MongoDB" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">MongoDB</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://nodejs.org/" target="_blank"><img src="./images/nodejs.svg" width="48" height="48" alt="NodeJS" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">NodeJS</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.squarespace.com/" target="_blank"><img src="./images/squarespace.svg" width="48" height="48" alt="Squarespace" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Squarespace</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://code.visualstudio.com/" target="_blank"><img src="./images/vscode.svg" width="48" height="48" alt="VSCode" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">VSCode</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://web.dev/" target="_blank"><img src="./images/html-css-javascript.png" width="48" height="48" alt="Web.Dev" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Web.Dev</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.cisco.com/" target="_blank"><img src="./images/cisco.svg" width="48" height="48" alt="Cisco" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Cisco</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.fortinet.com/" target="_blank"><img src="./images/fortinet.svg" width="48" height="48" alt="Fortinet" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Fortinet</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://mikrotik.com/" target="_blank"><img src="./images/Mikrotik.svg" width="48" height="48" alt="Mikrotik" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Mikrotik</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://www.vmware.com/" target="_blank"><img src="./images/vmware.svg" width="48" height="48" alt="VMware" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">VMware</figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center; width:96px;">
+    <a href="https://developers.google.com/" target="_blank"><img src="./images/google-developers.svg" width="48" height="48" alt="Dev.Google" /></a>
+    <figcaption style="font-size:12px; margin-top:6px;">Dev.Google</figcaption>
+  </figure>
+
+</div>
     <td align="center" width="96">
       <a href="https://code.visualstudio.com/">
         <img src="./images/vscode.svg" width="48" height="48" alt="" />
