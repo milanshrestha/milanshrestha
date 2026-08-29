@@ -203,6 +203,14 @@ from layout and brand system to launch and handover.
       <br>Web.Dev
     </td>
     <td align="center" width="96">
+      <a href="https://www.squarespace.com/" target="_blank">
+        <img src="./images/squarespace.svg" width="48" height="48" alt="Squarespace" />
+      </a>
+      <br>Squarespace
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="96">
       <a href="https://www.vmware.com/" target="_blank">
         <img src="./images/vmware.svg" width="48" height="48" alt="" />
       </a>
@@ -264,6 +272,8 @@ from layout and brand system to launch and handover.
       </a>
       <br>MongoDB
     </td>
+  </tr>
+  <tr>
     <td align="center"  width="96">
       <a href="https://angular.dev/" target="_blank" >
         <img src="./images/angular.svg" width="48" height="48" alt="" />
