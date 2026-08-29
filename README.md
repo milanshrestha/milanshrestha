@@ -135,6 +135,20 @@ Building software with a philosophy:
 
 ---
 
+### Squarespace Web Designer
+
+Custom Squarespace websites for hospitality brands, small businesses, and creators —
+from layout and brand system to launch and handover.
+
+**What I deliver**
+
+- Site builds on Squarespace 7.1
+- Custom CSS, layout, and brand-aligned design systems
+- Third-party integrations (forms, scheduling, payments, email)
+- Content migration, SEO setup, and launch handover
+
+---
+
 ## 📈 Goals
 
 - Build products that positively impact millions of people.
