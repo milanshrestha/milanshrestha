@@ -181,8 +181,6 @@ from layout and brand system to launch and handover.
   </tr>
 </table>
 
-GitHub opens links in profile READMEs in the same tab. Visit the [standalone Connect page](https://milanshrestha.github.io/milanshrestha/) to open these social links in new tabs.
-
 ---
 
 > *"Build technology that people genuinely need."*
