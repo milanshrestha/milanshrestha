@@ -160,7 +160,14 @@ from layout and brand system to launch and handover.
 
 ## 📫 Connect
 
-GitHub removes new-tab settings from links in profile READMEs. Visit the [standalone Connect page](https://milanshrestha.github.io/milanshrestha/) for social links that open in new tabs.
+You can find me on:
+
+- [GitHub](https://github.com/milanshrestha)
+- [Facebook](https://www.facebook.com/AlwaysCoolMilan)
+- [Instagram](https://www.instagram.com/alwayscoolmilan/)
+- [X](https://x.com/AlwaysCoolMilan)
+
+GitHub opens links in profile READMEs in the same tab. Visit the [standalone Connect page](https://milanshrestha.github.io/milanshrestha/) to open these social links in new tabs.
 
 ---
 
