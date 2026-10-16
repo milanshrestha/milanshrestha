@@ -142,16 +142,22 @@
         text-align: center;
         padding: 4rem 0 2rem;
       }
-      .hero img {
+      .hero .avatar {
         width: 120px;
         height: 120px;
         border-radius: 50%;
-        object-fit: cover;
         border: 4px solid var(--border);
         margin-bottom: 1rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        background: var(--surface);
+        color: var(--accent);
+        font-size: 3rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .hero h1 { margin-bottom: 0.25rem; }
       .hero .subtitle {
@@ -386,7 +392,7 @@
 
     <main id="content">
       <section id="hero" class="hero">
-        <img src="../images/laptop.jpg" alt="Milan Shrestha">
+        <div class="avatar" aria-hidden="true">M.</div>
         <h1>Hi, I'm Milan — you can call me M. 🦉</h1>
         <span class="subtitle">Technology Professional | Product Builder | Systems Thinker</span>
         <p>I'm a self-taught technology professional from Nepal with a passion for building practical solutions that improve everyday life.</p>
@@ -467,9 +473,8 @@
         <h2>💼 Experience</h2>
         <div class="experience-list">
           <div class="job">
-            <div class="role-time">IT Officer <span style="float:right;">Current</span></div>
+            <div class="role-time">IT Officer <span>Current</span></div>
             <h3>IT Operations</h3>
-            <div class="org">Current role</div>
             <ul>
               <li>IT Operations</li>
               <li>Technical Support</li>
