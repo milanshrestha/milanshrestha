@@ -318,39 +318,7 @@
         padding: 3rem 0;
       }
       .connect h2 { border: none; padding-bottom: 0; }
-      .platforms {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-      .platform {
-        display: grid;
-        min-height: 8rem;
-        padding: 1rem;
-        place-items: center;
-        align-content: center;
-        gap: 0.75rem;
-        border: 1px solid var(--border);
-        border-radius: 0.75rem;
-        background: var(--surface);
-        color: inherit;
-        text-decoration: none;
-        transition: border-color 150ms ease, transform 150ms ease;
-      }
-      .platform:hover, .platform:focus-visible {
-        transform: translateY(-2px);
-        border-color: var(--accent);
-      }
-      .platform img { width: 48px; height: 48px; }
-      .profile-link {
-        display: inline-block;
-        margin-top: 2rem;
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 600;
-      }
-      .profile-link:hover { text-decoration: underline; }
+      .connect .tech-table { margin-top: 2rem; }
 
       footer {
         text-align: center;
@@ -606,23 +574,14 @@
       <section id="connect" class="connect">
         <h2>📫 Connect</h2>
         <p>GitHub removes new-tab settings from links in profile READMEs. Visit the standalone Connect page for social links that open in new tabs.</p>
-        <div class="platforms" aria-label="Social platforms">
-          <a class="platform" href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer">
-            <img src="./images/github.svg" alt="GitHub"><span>GitHub</span>
-          </a>
-          <a class="platform" href="https://www.facebook.com/AlwaysCoolMilan" target="_blank" rel="noopener noreferrer">
-            <img src="./images/facebook.svg" alt="Facebook"><span>Facebook</span>
-          </a>
-          <a class="platform" href="https://www.instagram.com/alwayscoolmilan/" target="_blank" rel="noopener noreferrer">
-            <img src="./images/instagram.svg" alt="Instagram"><span>Instagram</span>
-          </a>
-          <a class="platform" href="https://x.com/AlwaysCoolMilan" target="_blank" rel="noopener noreferrer">
-            <img src="./images/x.svg" alt="X"><span>X</span>
-          </a>
-        </div>
-        <a class="btn btn-primary profile-link" href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer">
-          View my GitHub profile
-        </a>
+        <table class="tech-table" aria-label="Social profiles">
+          <tr>
+            <td><a href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer"><img src="./images/github.svg" alt="GitHub"><br>GitHub</a></td>
+            <td><a href="https://www.facebook.com/AlwaysCoolMilan" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.svg" alt="Facebook"><br>Facebook</a></td>
+            <td><a href="https://www.instagram.com/alwayscoolmilan/" target="_blank" rel="noopener noreferrer"><img src="./images/instagram.svg" alt="Instagram"><br>Instagram</a></td>
+            <td><a href="https://x.com/AlwaysCoolMilan" target="_blank" rel="noopener noreferrer"><img src="./images/x.svg" alt="X"><br>X</a></td>
+          </tr>
+        </table>
       </section>
     </main>
 
