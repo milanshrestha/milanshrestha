@@ -1,4 +1,4 @@
-name: Deploy Connect page to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
@@ -6,10 +6,7 @@ on:
       - main
     paths:
       - ".github/workflows/pages.yml"
-      - "images/facebook.svg"
-      - "images/github.svg"
-      - "images/instagram.svg"
-      - "images/x.svg"
+      - "images/**"
       - "site/**"
   workflow_dispatch:
 
@@ -35,7 +32,7 @@ jobs:
       - name: Prepare site assets
         run: |
           mkdir -p site/images
-          cp images/facebook.svg images/github.svg images/instagram.svg images/x.svg site/images/
+          cp -r images/* site/images/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
