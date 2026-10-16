@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d1117">
+    <meta name="description" content="Connect with Milan Shrestha on GitHub, Facebook, Instagram, and X.">
+    <title>Connect with Milan Shrestha</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #0d1117;
+        color: #e6edf3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem;
+        place-items: center;
+      }
+
+      main {
+        width: min(100%, 36rem);
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 0.5rem;
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+      }
+
+      p {
+        margin-top: 0;
+        color: #8b949e;
+        line-height: 1.6;
+      }
+
+      .platforms {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .platform {
+        display: grid;
+        min-height: 8rem;
+        padding: 1rem;
+        place-items: center;
+        align-content: center;
+        gap: 0.75rem;
+        border: 1px solid #30363d;
+        border-radius: 0.75rem;
+        background: #161b22;
+        color: inherit;
+        text-decoration: none;
+        transition: border-color 150ms ease, transform 150ms ease;
+      }
+
+      .platform:hover,
+      .platform:focus-visible {
+        transform: translateY(-2px);
+        border-color: #58a6ff;
+      }
+
+      .platform img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .profile {
+        display: inline-block;
+        margin-top: 2rem;
+        color: #58a6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Connect with Milan</h1>
+      <p>Find me on these platforms. Each link opens in a new tab.</p>
+
+      <nav class="platforms" aria-label="Social platforms">
+        <a class="platform" href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer">
+          <img src="./images/github.svg" width="48" height="48" alt="">
+          <span>GitHub</span>
+        </a>
+        <a class="platform" href="https://www.facebook.com/AlwaysCoolMilan" target="_blank" rel="noopener noreferrer">
+          <img src="./images/facebook.svg" width="48" height="48" alt="">
+          <span>Facebook</span>
+        </a>
+        <a class="platform" href="https://www.instagram.com/alwayscoolmilan/" target="_blank" rel="noopener noreferrer">
+          <img src="./images/instagram.svg" width="48" height="48" alt="">
+          <span>Instagram</span>
+        </a>
+        <a class="platform" href="https://x.com/AlwaysCoolMilan" target="_blank" rel="noopener noreferrer">
+          <img src="./images/x.svg" width="48" height="48" alt="">
+          <span>X</span>
+        </a>
+      </nav>
+
+      <a class="profile" href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer">
+        View my GitHub profile
+      </a>
+    </main>
+  </body>
+</html>
