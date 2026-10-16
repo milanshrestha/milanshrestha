@@ -1,21 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-color-mode="dark" data-dark-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0d1117">
     <meta name="description" content="Milan Shrestha — Technology Professional, Product Builder, and Systems Thinker from Nepal. Building Khaancho, a next-generation classified advertising platform.">
     <title>Milan Shrestha — Technology Professional | Product Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@primer/css@22.3.2/dist/primer.css">
     <style>
       :root {
         color-scheme: dark;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background: #0d1117;
-        color: #e6edf3;
-        --accent: #58a6ff;
-        --muted: #8b949e;
-        --border: #30363d;
-        --surface: #161b22;
+        background: var(--bgColor-default, #0d1117);
+        color: var(--fgColor-default, #e6edf3);
+        --accent: var(--fgColor-accent, #58a6ff);
+        --muted: var(--fgColor-muted, #8b949e);
+        --border: var(--borderColor-default, #30363d);
+        --surface: var(--bgColor-muted, #161b22);
       }
 
       * { box-sizing: border-box; }
@@ -618,7 +619,7 @@
             <img src="./images/x.svg" alt="X"><span>X</span>
           </a>
         </div>
-        <a class="profile-link" href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-primary profile-link" href="https://github.com/milanshrestha" target="_blank" rel="noopener noreferrer">
           View my GitHub profile
         </a>
       </section>
