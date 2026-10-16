@@ -160,7 +160,10 @@ from layout and brand system to launch and handover.
 
 ## 📫 Connect
 
-- GitHub: https://github.com/milanshrestha
+- GitHub: [milanshrestha](https://github.com/milanshrestha)
+- Facebook: [AlwaysCoolMilan](https://www.facebook.com/AlwaysCoolMilan)
+- Instagram: [@alwayscoolmilan](https://www.instagram.com/alwayscoolmilan/)
+- X: [@AlwaysCoolMilan](https://x.com/AlwaysCoolMilan)
 
 ---
 
