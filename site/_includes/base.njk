@@ -109,6 +109,22 @@
         .nav-toggle { display: none; }
       }
 
+      /* Mobile dropdown menu (opened state) */
+      @media (max-width: 47.98rem) {
+        nav.open ul {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: var(--surface);
+          border-top: 1px solid var(--border);
+          padding: 1rem;
+          gap: 0;
+        }
+      }
+
       /* Main layout */
       main {
         max-width: 72rem;
@@ -177,16 +193,21 @@
         gap: 1rem;
       }
       .working-on li {
+        position: relative;
+        padding: 1rem 1rem 1rem 2.25rem;
         background: var(--surface);
         border: 1px solid var(--border);
         border-radius: 0.75rem;
-        padding: 1rem;
         list-style: none;
-        display: flex;
-        align-items: flex-start;
-        gap: 0.75rem;
       }
-      .working-on li::before { content: "▹"; color: var(--accent); font-weight: bold; flex-shrink: 0; }
+      .working-on li::before {
+        content: "▹";
+        color: var(--accent);
+        font-weight: bold;
+        position: absolute;
+        left: 0.75rem;
+        top: 1rem;
+      }
 
       /* Skills */
       .skills-grid {
@@ -371,29 +392,19 @@
     <script>
       // Mobile nav toggle
       const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav');
       const navList = document.getElementById('nav-list');
-      let expanded = false;
+
       toggle.addEventListener('click', () => {
-        expanded = !expanded;
-        toggle.setAttribute('aria-expanded', expanded);
-        navList.style.display = expanded ? 'flex' : 'none';
-        navList.style.flexDirection = 'column';
-        navList.style.position = 'absolute';
-        navList.style.top = '100%';
-        navList.style.left = '0';
-        navList.style.right = '0';
-        navList.style.background = 'var(--surface)';
-        navList.style.borderTop = '1px solid var(--border)';
-        navList.style.padding = '1rem';
-        navList.style.gap = '0';
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
       });
 
-      // Close nav on link click
+      // Close menu on link click (mobile only — harmless on desktop)
       navList.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
-          expanded = false;
+          nav.classList.remove('open');
           toggle.setAttribute('aria-expanded', 'false');
-          navList.style.display = 'none';
         });
       });
 
