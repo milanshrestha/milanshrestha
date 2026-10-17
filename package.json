@@ -1,0 +1,26 @@
+{
+  "name": "milanshrestha",
+  "version": "1.0.0",
+  "description": "I'm a self-taught technology professional from Nepal with a passion for building practical solutions that improve everyday life.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "start": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milanshrestha/milanshrestha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/milanshrestha/milanshrestha/issues"
+  },
+  "homepage": "https://github.com/milanshrestha/milanshrestha#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7"
+  }
+}
