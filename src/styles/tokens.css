@@ -1,0 +1,95 @@
+:root {
+  /* Color palette - neutral backgrounds with single accent color */
+  --bgColor-default: #ffffff;
+  --fgColor-default: #111827;
+  --accent: #2563eb; /* Single primary accent color - blue */
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --surface: #f9fafb;
+  
+  /* Dark mode support (will be overridden by prefers-color-scheme) */
+  --bgColor-default-dark: #111827;
+  --fgColor-default-dark: #f9fafb;
+  --border-dark: #374151;
+  --surface-dark: #1f2937;
+  
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  
+  /* Transition */
+  --transition-fast: 150ms ease-in-out;
+  --transition-medium: 200ms ease-in-out;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgColor-default: var(--bgColor-default-dark);
+    --fgColor-default: var(--fgColor-default-dark);
+    --border: var(--border-dark);
+    --surface: var(--surface-dark);
+  }
+}
+
+/* Utility classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--accent);
+  color: var(--bgColor-default);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  transition: top var(--transition-fast);
+}
+.skip-link:focus { top: 0; }
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: var(--bgColor-default);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color var(--transition-medium);
+}
+.btn:hover { background: #1d4ed8; }
+.btn:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn--secondary {
+  background: var(--surface);
+  color: var(--fgColor-default);
+  border: 1px solid var(--border);
+}
+.btn--secondary:hover { background: var(--border); }

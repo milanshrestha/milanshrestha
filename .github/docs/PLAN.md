@@ -15,8 +15,8 @@ The goal is to build the website incrementally, validate each phase, and avoid u
 
 ## 2. Project Boundaries
 
-* The website will be developed as a new, independent project.
-* The `../../README.md` file in this project directory contains the content source. The actual GitHub profile repository at `https://github.com/milanshrestha` must not be modified as part of website development.
+* The website will be developed in the same repository as in the README.md repository.
+* The `../../README.md` in this repository is the content source. Its role as the GitHub profile display must be preserved (do not remove or break the rendered profile content), but the surrounding website project files are added alongside it.
 * The implementation must strictly follow the five approved project documents in directory `../docs`.
 * Technical decisions may be refined when necessary, but significant changes must be documented.
 * No deployment or successful test may be claimed without verification.
@@ -34,7 +34,7 @@ Tasks:
 3. Check that the documents agree on routes, content fields, design principles, and technical requirements.
 4. Review the local `../../README.md` file for content reference only.
 5. Identify missing or uncertain profile information.
-6. Confirm the development environment and repository for the new project.
+6. Confirm the development environment and repository within the Github profile repository.
 7. Confirm the framework and hosting approach.
 
 Deliverables:
@@ -83,7 +83,7 @@ Deliverables:
 
 Tasks:
 
-1. Initialize the project in a new directory.
+1. Initialize the project within the profile repository directory.
 
 2. Install and configure the chosen framework (11ty with TypeScript).
 

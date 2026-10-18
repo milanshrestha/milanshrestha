@@ -1,0 +1,52 @@
+---
+layout: layouts/page.njk
+title: "{{ title }} — {{ profile.name }}"
+description: "{{ seoDescription | default(summary) }}"
+---
+
+<article class="project-single">
+  <header class="project-header">
+    <h1>{{ title }}</h1>
+    {% if status %}
+      <span class="project-status">{{ status }}</span>
+    {% endif %}
+  </header>
+
+  {% if coverImage %}
+    <img class="project-cover" src="{{ coverImage }}" alt="{{ coverImageAlt | default(title) }}">
+  {% endif %}
+
+  <p class="project-summary">{{ summary }}</p>
+
+  <div class="project-body">
+    {{ content | safe }}
+  </div>
+
+  {% if role %}
+    <section class="project-role">
+      <h2>Role</h2>
+      <p>{{ role }}</p>
+    </section>
+  {% endif %}
+
+  {% if technologies %}
+    <section class="project-tech">
+      <h2>Technologies</h2>
+      <ul class="tag-list">
+        {% for tech in technologies %}
+          <li>{{ tech }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  <footer class="project-links">
+    {% if repositoryUrl %}
+      <a href="{{ repositoryUrl }}" target="_blank" rel="noopener noreferrer">View Source</a>
+    {% endif %}
+    {% if liveUrl %}
+      <a href="{{ liveUrl }}" target="_blank" rel="noopener noreferrer">Visit Project</a>
+    {% endif %}
+    <a href="/projects">Back to Projects</a>
+  </footer>
+</article>

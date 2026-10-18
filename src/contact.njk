@@ -1,0 +1,22 @@
+---
+layout: layouts/page.njk
+title: "Contact — {{ profile.name }}"
+description: "Get in touch with {{ profile.name }}: professional links and a contact form."
+---
+
+<h1>Contact</h1>
+<p class="page-lead">Looking to collaborate, share ideas, or build something meaningful together?</p>
+
+<section>
+  <h2>Professional Links</h2>
+  <ul class="links-grid">
+    {% for link in profile.professionalLinks %}
+      <li>
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ link.icon }}" alt="" loading="lazy">
+          <span>{{ link.label }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

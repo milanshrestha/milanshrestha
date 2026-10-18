@@ -1,0 +1,58 @@
+---
+layout: layouts/page.njk
+title: "{{ title }} — {{ profile.name }}"
+description: "{{ seoDescription | default(excerpt) }}"
+---
+
+<article class="article-single">
+  <header class="article-header">
+    {% if categories %}
+      <span class="article-category">
+        {{ categories | join(", ") }}
+      </span>
+    {% endif %}
+    <h1>{{ title }}</h1>
+    {% if excerpt %}
+      <p class="article-excerpt">{{ excerpt }}</p>
+    {% endif %}
+    {% if publishedAt %}
+      <time class="article-date" datetime="{{ publishedAt }}">{{ publishedAt | date }}</time>
+    {% endif %}
+  </header>
+
+  {% if coverImage %}
+    <img class="article-cover" src="{{ coverImage }}" alt="{{ coverImageAlt | default(title) }}">
+  {% endif %}
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+
+  {% if tags | length > 0 %}
+    <footer class="article-footer">
+      <ul class="tag-list">
+        {% for tag in tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </footer>
+  {% endif %}
+</article>
+
+{% set related_list = [] %}
+{% for a in collections.articles %}
+  {% if a.slug != slug %}
+    {% set related_list = related_list + [a] %}
+  {% endif %}
+{% endfor %}
+{% set related = related_list | slice(0, 3) %}
+{% if related | length > 0 %}
+  <section class="related-articles">
+    <h2>Related Articles</h2>
+    <div class="cards-grid">
+      {% for r in related %}
+        {% include "components/article-card.njk" %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

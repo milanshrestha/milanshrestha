@@ -1,0 +1,18 @@
+---
+layout: layouts/page.njk
+title: "Blog — {{ profile.name }}"
+description: "Articles and writing by {{ profile.name }}."
+---
+
+<h1>Blog</h1>
+<p class="page-lead">Selected writing on technology, product building, and systems thinking.</p>
+
+{% if collections.articles | length > 0 %}
+<div class="cards-grid">
+  {% for article in collections.articles %}
+    {% include "components/article-card.njk" %}
+  {% endfor %}
+</div>
+{% else %}
+<p class="empty-state">No articles published yet. Check back soon.</p>
+{% endif %}

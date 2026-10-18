@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description | default(profile.introduction) }}">
+    <title>{{ title | default(profile.name) }}</title>
+    <link rel="stylesheet" href="/styles/tokens.css">
+    <link rel="stylesheet" href="/styles/global.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    {% include "components/header.njk" %}
+    <main id="content">
+      {{ content | safe }}
+    </main>
+    {% include "components/footer.njk" %}
+    <script src="/styles/scripts.js" defer></script>
+  </body>
+</html>

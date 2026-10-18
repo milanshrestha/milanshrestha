@@ -1,0 +1,58 @@
+---
+layout: layouts/page.njk
+title: "Search — {{ profile.name }}"
+description: "Search across articles and projects."
+---
+
+<h1>Search</h1>
+<p class="page-lead">Search across all articles and projects on the site.</p>
+
+<section class="search-panel">
+  <input
+    id="site-search"
+    type="search"
+    placeholder="Search articles and projects…"
+    autocomplete="off"
+    aria-label="Search the site"
+  />
+  <div id="search-results" aria-live="polite"></div>
+</section>
+
+<script>
+  const index = {
+    articles: [
+      {% for a in collections.articles %}
+        { title: "{{ a.title | replace('"', '\\\\\\"') }}", url: "{{ a.url }}", excerpt: "{{ a.excerpt | default('') | replace('"', '\\\\\\"') }}", type: "article" },
+      {% endfor %}
+    ],
+    projects: [
+      {% for p in collections.projects %}
+        { title: "{{ p.title | replace('"', '\\\\\\"') }}", url: "{{ p.url }}", excerpt: "{{ p.summary | replace('"', '\\\\\\"') }}", type: "project" },
+      {% endfor %}
+    ]
+  };
+
+  const input = document.getElementById("site-search");
+  const out = document.getElementById("search-results");
+  const all = [...index.articles, ...index.projects];
+
+  function render(q) {
+    const s = q.toLowerCase();
+    const matches = all.filter(
+      (x) =>
+        x.title.toLowerCase().includes(s) ||
+        x.excerpt.toLowerCase().includes(s)
+    );
+    out.innerHTML = matches.length
+      ? `<ul>${matches
+          .map(
+            (m) =>
+              `<li><span class="search-type">${m.type}</span> <a href="${m.url}">${m.title}</a></li>`
+          )
+          .join("")}</ul>`
+      : s ? "<p class=\"empty-state\">No results found.</p>" : "";
+  }
+
+  input.addEventListener("input", () => render(input.value.trim()));
+  render("");
+</script>

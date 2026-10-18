@@ -582,9 +582,9 @@ Avoid introducing complexity before there is sufficient content or a clear use c
 
 * Follow `DESIGN.md` for presentation and responsive behavior.
 
-* Defer detailed content fields and data relationships to `CONTENT_MODEL.md`.
+* Defer detailed content fields and data relationships to `CONTENT.md`.
 
-* Defer technology choices and implementation decisions to `TECHNICAL_SPEC.md`.
+* Defer technology choices and implementation decisions to `SPECS.md`.
 
 This document defines intended website structure. It does not authorize a framework change, database migration, or unnecessary rewrite.
 
@@ -622,10 +622,10 @@ The site structure is ready for implementation when:
 
 * `DESIGN.md` — Layout, colors, typography, spacing, responsiveness, and accessibility.
 
-* `CONTENT_MODEL.md` — To be defined after approval of this site structure.
+* `CONTENT.md` — To be defined after approval of this site structure.
 
-* `TECHNICAL_SPEC.md` — Technology stack and implementation architecture.
+* `SPECS.md` — Technology stack and implementation architecture.
 
-* `IMPLEMENTATION_PLAN.md` — Development milestones and verification.
+* `PLAN.md` — Development milestones and verification.
 
 **Status:** Proposed site structure, awaiting review and approval before defining the content model.

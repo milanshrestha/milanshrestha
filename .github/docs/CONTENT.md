@@ -315,7 +315,7 @@ Depending on the existing project, content may be stored in:
 
 * A database
 
-The choice must be made in `TECHNICAL_SPEC.md` after inspecting the existing codebase.
+The choice must be made in `SPECS.md` after inspecting the existing codebase.
 
 ### README relationship
 

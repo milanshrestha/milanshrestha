@@ -6,23 +6,20 @@ This document defines the technical architecture, development standards, and ope
 
 The website must follow the decisions documented in:
 
-* `DESIGN.md` — visual identity and design principles
+* `./DESIGN.md` — visual identity and design principles
+* `./STRUCTURE.md` — pages, routes, navigation, and layout
+* `./CONTENT.md` — content types, fields, and relationships
+* `./PLAN.md` — phased implementation and milestones
 
-* `STRUCTURE.md` — pages, routes, navigation, and layout
-
-* `CONTENT.md` — content types, fields, and relationships
-
-* `PLAN.md` — phased implementation and milestones
-
-The website will be developed as a **separate project**. The existing GitHub profile README is a reference for content only.
+The website is built within the current repository. The existing GitHub profile README is the content source for the website.
 
 ## 2. Project Boundaries
 
 ### 2.1 New website project
 
-The website must have its own project directory, source files, dependencies, version control configuration, and deployment setup as appropriate.
+The website must be built within the project directory, source files, dependencies, version control configuration, and deployment setup as appropriate.
 
-The implementation must not depend on the existing GitHub profile repository.
+The implementation must exist within the GitHub profile repository.
 
 ### 2.2 README as a content source
 
@@ -40,9 +37,7 @@ Use the README to inform:
 
 * Relevant professional links
 
-The README is not the website's source code, technical foundation, or deployment repository.
-
-Do not modify, reorganize, or deploy the existing GitHub profile repository as part of this project.
+The README is not the website's source code, technical foundation, or deployment repository. README.md stays untouched and rendered on Github as a profile display.
 
 ### 2.3 Content integrity
 
@@ -68,7 +63,7 @@ Content may be edited for clarity and adapted to the website's structure without
 
 * **Extensible:** Support future additions without requiring a complete rebuild.
 
-* **Independent:** Keep the website project separate from the profile README repository.
+* **Coexistence:** Build the website project within the same directory as the profile README.md repository.
 
 ## 4. Proposed Technology Stack
 
@@ -81,7 +76,7 @@ The following stack is proposed for the new website. Final decisions should be m
 | Content         | Markdown with frontmatter                      |
 | Styling         | CSS and design tokens                          |
 | Package manager | npm                                            |
-| Version control | A dedicated website repository, if Git is used |
+| Version control | Existing profile repository, if Git is used    |
 | Hosting         | To be selected based on project needs          |
 | Search          | Lightweight client-side search index           |
 
@@ -366,9 +361,9 @@ Performance targets must be assessed through testing rather than assumed.
 
 ## 15. Development Workflow
 
-1. Establish the dedicated website project.
+1. Set up the 11ty project structure within this repository.
 
-2. Review `DESIGN.md`, `SITE_STRUCTURE.md`, `CONTENT_MODEL.md`, and this document.
+2. Review `DESIGN.md`, `STRUCTURE.md`, `CONTENT.md`, `PLAN.md` and this document.
 
 3. Retrieve and review the existing GitHub README strictly for content.
 
@@ -388,7 +383,7 @@ Performance targets must be assessed through testing rather than assumed.
 
 11. Test navigation, routes, responsive layouts, and content rendering.
 
-12. Configure hosting and deployment independently of the original profile repository.
+12. Configure hosting and deployment for this repository.
 
 13. Verify the deployed website before reporting completion.
 
@@ -420,7 +415,7 @@ The website is ready for release when:
 
 * Deployment is verified, if deployment is in scope.
 
-* The existing GitHub profile repository remains untouched.
+* The profile README is untouched and continues to render correctly on GitHub and serves as the content source.
 
 ## 17. Hosting and Deployment
 
@@ -428,7 +423,7 @@ Select hosting based on the website's framework, build requirements, cost, and m
 
 Cloudflare Pages is one possible option, not a fixed requirement.
 
-The deployment setup must belong to the new website project. Configure the build command, output directory, runtime requirements, environment variables, and domain settings as needed.
+The deployment setup must belong to this repository. Configure the build command, output directory, runtime requirements, environment variables, and domain settings as needed.
 
 A successful build alone does not confirm successful deployment. Verify that the deployed website loads and its key routes function correctly.
 
@@ -454,8 +449,8 @@ These are optional and are not required for the initial release.
 
 ## 19. Implementation Rule
 
-The four project documents collectively define the intended website.
+The 5 project documents collectively define the intended website.
 
-The existing GitHub profile README serves only as source material for relevant content. The new website must have its own implementation, project structure, and deployment workflow.
+The existing GitHub profile README serves only as source material for relevant content. The new website implementation, project structure, and deployment workflow must exist in the profile repository.
 
 Technical decisions may be refined during development, but changes must remain consistent with the approved design, site structure, and content model. Update this document whenever a significant technical decision changes.

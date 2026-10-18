@@ -6,7 +6,11 @@
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve",
-    "start": "eleventy"
+    "start": "eleventy",
+    "typecheck": "tsc --noEmit",
+    "build:config": "esbuild eleventy.config.ts --bundle --platform=node --outfile=eleventy.config.js --format=esm",
+    "prebuild": "npm run build:config",
+    "predev": "npm run build:config"
   },
   "repository": {
     "type": "git",
@@ -15,12 +19,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/milanshrestha/milanshrestha/issues"
   },
   "homepage": "https://github.com/milanshrestha/milanshrestha#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.7"
+    "@11ty/eleventy": "^3.1.7",
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
   }
 }

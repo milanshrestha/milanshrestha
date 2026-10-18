@@ -1,0 +1,72 @@
+---
+layout: layouts/page.njk
+title: "Milan Shrestha — Technology Professional | Product Builder"
+description: "Milan Shrestha — Technology Professional, Product Builder, and Systems Thinker from Nepal. Building Khaancho, a next-generation classified advertising platform."
+---
+
+<section class="hero">
+  {% if profile.profileImage %}
+    <img class="hero__avatar" src="{{ profile.profileImage }}" alt="{{ profile.profileImageAlt }}">
+  {% endif %}
+  <div class="hero__content">
+    <h1>Hi, I'm Milan — you can call me M. 🦉</h1>
+    <span class="hero__subtitle">{{ profile.professionalTitle }}</span>
+    <p>{{ profile.introduction }}</p>
+    <blockquote>{{ profile.philosophy }}</blockquote>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="/projects">Explore My Work</a>
+      <a class="btn" href="/blog">Read My Writing</a>
+    </div>
+  </div>
+</section>
+
+<section id="working-on">
+  <h2>What I'm Working On</h2>
+  <ul class="working-on">
+    {% for item in profile.workingOn %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% if collections.articles | length > 0 %}
+<section id="articles">
+  <div class="section-header">
+    <h2>Articles</h2>
+    <a href="/blog">View All Articles</a>
+  </div>
+  <div class="cards-grid">
+    {% for article in collections.articles | sort(attribute="date", reverse=true) | slice(0, 3) %}
+      {% include "components/article-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if collections.projects | length > 0 %}
+<section id="projects">
+  <div class="section-header">
+    <h2>Projects</h2>
+    <a href="/projects">View All Projects</a>
+  </div>
+  <div class="cards-grid">
+    {% for project in collections.projects | sort(attribute="sortOrder") | slice(0, 3) %}
+      {% include "components/project-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section id="summary">
+  <div class="section-header">
+    <h2>About</h2>
+    <a href="/about">Learn More</a>
+  </div>
+  <p>{{ profile.aboutContent }}</p>
+</section>
+
+<section id="contact-cta">
+  <h2>Let's Connect</h2>
+  <p>Looking to collaborate, share ideas, or build something meaningful together?</p>
+  <a class="btn btn--primary" href="/contact">Get in Touch</a>
+</section>

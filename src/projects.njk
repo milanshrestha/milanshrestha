@@ -1,0 +1,18 @@
+---
+layout: layouts/page.njk
+title: "Projects — {{ profile.name }}"
+description: "Selected projects by {{ profile.name }}: products, case studies, and ongoing work."
+---
+
+<h1>Projects</h1>
+<p class="page-lead">Selected work — products, case studies, experiments, and ongoing contributions.</p>
+
+{% if collections.projects | length > 0 %}
+  <div class="cards-grid">
+    {% for project in collections.projects | sort(attribute="sortOrder") %}
+      {% include "components/project-card.njk" %}
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="empty-state">No projects published yet. Check back soon.</p>
+{% endif %}

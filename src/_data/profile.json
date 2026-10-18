@@ -1,0 +1,119 @@
+{
+  "name": "Milan Shrestha",
+  "professionalTitle": "Technology Professional | Product Builder | Systems Thinker",
+  "introduction": "Self-taught technology professional from Nepal with a passion for building practical solutions that improve everyday life.",
+  "philosophy": "I believe technology should simplify life, empower people, and solve problems that truly matter.",
+  "aboutContent": "My journey into technology wasn't conventional. I began my career in hospitality as a Front Office Receptionist, where I naturally gravitated toward solving technical problems. Through continuous self-learning and hands-on experience, I transitioned into IT and grew into an IT Manager. Today, I combine IT operations, software development, and product thinking to create technology that solves real-world problems.",
+  "profileImage": "/images/profile.jpg",
+  "profileImageAlt": "Milan Shrestha",
+  "githubUrl": "https://github.com/milanshrestha",
+  "professionalLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/milanshrestha",
+      "icon": "/images/github.svg"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/AlwaysCoolMilan",
+      "icon": "/images/facebook.svg"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/alwayscoolmilan/",
+      "icon": "/images/instagram.svg"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/AlwaysCoolMilan",
+      "icon": "/images/x.svg"
+    }
+  ],
+  "workingOn": [
+    "Building Khaancho — A next-generation classified advertising platform.",
+    "Developing full-stack web applications.",
+    "Exploring AI-assisted software development.",
+    "Creating knowledge management systems and technical documentation.",
+    "Improving business processes through technology."
+  ],
+  "skills": [
+    {
+      "category": "Software Development",
+      "items": [
+        "Full Stack Web Development",
+        "REST APIs",
+        "Database Design",
+        "System Architecture",
+        "Software Debugging"
+      ]
+    },
+    {
+      "category": "Product",
+      "items": [
+        "Product Strategy",
+        "MVP Planning",
+        "Systems Thinking",
+        "Business Analysis",
+        "UX-Oriented Problem Solving"
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        "Prompt Engineering",
+        "AI-Assisted Development",
+        "Workflow Automation",
+        "Knowledge Base Development"
+      ]
+    },
+    {
+      "category": "Professional",
+      "items": [
+        "Technical Documentation",
+        "Project Planning",
+        "Process Improvement",
+        "Critical Thinking",
+        "Continuous Learning"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "it-officer",
+      "organization": "Hotel Nature",
+      "role": "IT Officer",
+      "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
+      "isCurrent": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "front-office-receptionist",
+      "organization": "Hotel Nature",
+      "role": "Front Office Receptionist",
+      "description": "Guest Relations, Reservation Management, Customer Service, and Cross-department Coordination.",
+      "isCurrent": false,
+      "sortOrder": 2
+    },
+    {
+      "id": "cable-tv-technician",
+      "organization": "Nexus Pvt. Ltd.",
+      "role": "Cable TV System Technician",
+      "description": "Satellite TV Installation, CATV/SMATV Systems, RF Signal Troubleshooting, and Technical Field Support.",
+      "isCurrent": false,
+      "sortOrder": 3
+    }
+  ],
+  "learning": [
+    "Software Architecture",
+    "Scalable System Design",
+    "AI Engineering",
+    "Product Management",
+    "Cloud Technologies"
+  ],
+  "goals": [
+    "Build products that positively impact millions of people.",
+    "Create scalable technology businesses.",
+    "Contribute to open-source projects.",
+    "Continue learning every day."
+  ]
+}

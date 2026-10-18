@@ -1,0 +1,58 @@
+---
+layout: layouts/page.njk
+title: "About — {{ profile.name }}"
+description: "Learn more about {{ profile.name }}: background, experience, skills, and philosophy."
+---
+
+<h1>About</h1>
+<p class="page-lead">{{ profile.aboutContent }}</p>
+
+<section>
+  <h2>Philosophy</h2>
+  <blockquote>{{ profile.philosophy }}</blockquote>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    {% for group in profile.skills %}
+      <div class="skill-category">
+        <h3>{{ group.category }}</h3>
+        <ul>
+          {% for item in group.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="experience-list">
+    {% for job in profile.experience | sort(attribute="sortOrder") %}
+      <div class="job">
+        <div class="job__meta">
+          <span class="job__role">{{ job.role }}</span>
+          {% if job.isCurrent %}<span class="job__current">Current</span>{% endif %}
+        </div>
+        <h3>{{ job.organization }}</h3>
+        {% if job.description %}
+          <p>{{ job.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% if profile.learning %}
+<section>
+  <h2>Current Learning</h2>
+  <div class="learning-grid">
+    {% for item in profile.learning %}
+      <div class="learning-item">{{ item }}</div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

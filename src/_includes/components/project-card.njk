@@ -1,0 +1,14 @@
+<article class="project-card">
+  <h3><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+  <p class="project-card__summary">{{ project.data.summary }}</p>
+  {% if project.data.status %}
+    <span class="project-card__status">{{ project.data.status }}</span>
+  {% endif %}
+  {% if project.data.technologies %}
+    <ul class="project-card__technologies">
+      {% for tech in project.data.technologies %}
+        <li>{{ tech }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</article>

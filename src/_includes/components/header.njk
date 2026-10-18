@@ -1,0 +1,15 @@
+<header>
+  <div class="nav-container">
+    <a class="logo" href="/">M<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-list">
+        {% for item in navigation %}
+          <li><a href="{{ item.url }}" {% if page.url === item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
