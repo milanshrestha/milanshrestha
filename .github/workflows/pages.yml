@@ -8,7 +8,9 @@ on:
       - ".github/workflows/pages.yml"
       - ".eleventy.js"
       - "package.json"
-      - "site/**"
+      - "eleventy.config.ts"
+      - "eleventy.config.js"
+      - "src/**"
       - "images/**"
   workflow_dispatch:
 
@@ -42,7 +44,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: public
 
   deploy:
     environment:
