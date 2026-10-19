@@ -9,7 +9,7 @@ technologies:
   - "Custom CSS"
   - "Branding"
 role: "Designer & Developer"
-coverImage: "/images/laptop.jpg"
+coverImage: "/images/cover-placeholder.jpg"
 featured: false
 sortOrder: 3
 repositoryUrl: ""

@@ -11,7 +11,7 @@ technologies:
   - "Marketplace"
   - "Product Design"
 role: "Product Builder"
-coverImage: "/images/laptop.jpg"
+coverImage: "/images/cover-placeholder.jpg"
 featured: true
 sortOrder: 1
 repositoryUrl: ""

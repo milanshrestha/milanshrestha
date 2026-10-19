@@ -1,21 +1,25 @@
 <article class="article-card">
   {% if article.data.coverImage %}
-    <img src="{{ article.data.coverImage }}" alt="{{ article.data.coverImageAlt | default(article.data.title) }}" width="400" height="180" loading="lazy">
+    <div class="article-card__image-wrapper">
+      <img src="{{ article.data.coverImage }}" alt="{{ article.data.coverImageAlt | default(article.data.title) }}" width="400" height="180" loading="lazy">
+    </div>
   {% endif %}
-  {% if article.data.categories %}
-    <span class="article-card__category">{{ article.data.categories | first }}</span>
-  {% endif %}
-  <h3><a href="{{ article.url }}">{{ article.data.title }}</a></h3>
-  {% if article.data.excerpt %}
-    <p class="article-card__excerpt">{{ article.data.excerpt }}</p>
-  {% endif %}
-  <div class="article-card__meta">
-    {% if article.data.publishedAt %}
-      <time datetime="{{ article.data.publishedAt }}">{{ article.data.publishedAt | date }}</time>
+  <div class="article-card__content">
+    {% if article.data.categories %}
+      <span class="article-card__category">{{ article.data.categories | first }}</span>
     {% endif %}
-    {% if article.templateContent %}
-      <span>&bull;</span>
-      <span>{{ article.templateContent | readingTime }}</span>
+    <h3><a href="{{ article.url }}">{{ article.data.title }}</a></h3>
+    {% if article.data.excerpt %}
+      <p class="article-card__excerpt">{{ article.data.excerpt }}</p>
     {% endif %}
+    <div class="article-card__meta">
+      {% if article.data.publishedAt %}
+        <time datetime="{{ article.data.publishedAt }}">{{ article.data.publishedAt | date }}</time>
+      {% endif %}
+      {% if article.templateContent %}
+        <span>&bull;</span>
+        <span>{{ article.templateContent | readingTime }}</span>
+      {% endif %}
+    </div>
   </div>
 </article>

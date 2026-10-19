@@ -4,7 +4,7 @@ slug: "thinking-in-systems"
 excerpt: "Notes on how systems thinking shapes how I approach product and engineering work."
 publishedAt: "2026-10-01"
 status: "published"
-coverImage: "/images/laptop.jpg"
+coverImage: "/images/cover-placeholder.jpg"
 categories:
   - "Product"
 tags:

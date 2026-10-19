@@ -1,21 +1,24 @@
 :root {
   /* ==========================================================================
-     Color tokens — warm-stone palette (DESIGN.md §5)
+     Color tokens — Industry Standard Light Palette (Tailwind/Vercel inspired)
      ========================================================================== */
-  --color-background:    #FAFAF9; /* Main page background (warm off-white)   */
-  --color-surface:       #FFFFFF; /* Cards and content surfaces (white)       */
-  --color-text:          #1C1917; /* Primary text (warm stone)                */
-  --color-text-muted:    #57534E; /* Secondary text and metadata              */
-  --color-primary:       #2563EB; /* Links and primary actions                */
-  --color-primary-hover: #1D4ED8; /* Hover state                              */
-  --color-border:        #E7E5E4; /* Dividers and subtle outlines (warm stone) */
-  --color-focus:         #2563EB; /* Keyboard focus indicator                 */
+  --color-background:    #F8FAFC; /* Slate 50 — soft, professional off-white */
+  --color-surface:       #FFFFFF; /* Pure white for cards & content surfaces */
+  --color-text:          #0F172A; /* Slate 900 — rich, high-contrast primary text */
+  --color-text-muted:    #475569; /* Slate 600 — highly readable secondary text */
+  --color-primary:       #2563EB; /* Blue 600 — links and primary actions */
+  --color-primary-hover: #1D4ED8; /* Blue 700 — hover state */
+  --color-border:        #E2E8F0; /* Slate 200 — crisp borders */
+  --color-focus:         #2563EB; /* Keyboard focus indicator */
+  --color-header-bg:     rgba(248, 250, 252, 0.85); /* Header frosted glass background */
 
-  /* Dark mode base values (cool-gray; renamed for consistency; values preserved) */
-  --color-background-dark: #111827;
-  --color-text-dark:        #f9fafb;
-  --color-border-dark:      #374151;
-  --color-surface-dark:     #1f2937;
+  /* Dark mode base values — Industry Standard Dark Palette */
+  --color-background-dark: #0B0F19; /* Deep rich dark slate/navy */
+  --color-surface-dark:     #111827; /* Gray 900 — elevated surfaces/cards */
+  --color-text-dark:        #F9FAFB; /* Gray 50 — brilliant, high-contrast white text */
+  --color-text-muted:    #9CA3AF; /* Gray 400 — clearly visible secondary text */
+  --color-border-dark:      #1F2937; /* Gray 800 — clean dark dividers */
+  --color-header-bg-dark:   rgba(17, 24, 39, 0.85);
 
   /* ==========================================================================
      Typography — font family (DESIGN.md §6)
@@ -56,19 +59,36 @@
   --radius-lg: 0.75rem;  /* 12px — larger images / hero */
 
   /* ==========================================================================
-     Transitions (preserved — not specified in DESIGN.md §5/§6/§7)
+     Transitions
      ========================================================================== */
   --transition-fast:   150ms ease-in-out;
   --transition-medium: 200ms ease-in-out;
 }
 
-/* Dark mode — override light tokens with dark values */
+/* Dark mode & Theme overrides */
+[data-theme="dark"] {
+  --color-background: var(--color-background-dark);
+  --color-text:       var(--color-text-dark);
+  --color-border:     var(--color-border-dark);
+  --color-surface:    var(--color-surface-dark);
+  --color-header-bg:  var(--color-header-bg-dark);
+}
+
+[data-theme="light"] {
+  --color-background: #F8FAFC;
+  --color-text:       #0F172A;
+  --color-border:     #E2E8F0;
+  --color-surface:    #FFFFFF;
+  --color-header-bg:  rgba(248, 250, 252, 0.85);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --color-background: var(--color-background-dark);
     --color-text:       var(--color-text-dark);
     --color-border:     var(--color-border-dark);
     --color-surface:    var(--color-surface-dark);
+    --color-header-bg:  var(--color-header-bg-dark);
   }
 }
 

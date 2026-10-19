@@ -12,79 +12,128 @@ description: "{{ seoDescription | default(excerpt) }}"
   </ol>
 </nav>
 
-<article class="article-single">
-  <header class="article-header">
-    {% if categories %}
-      <span class="article-category">
-        {{ categories | join(", ") }}
-      </span>
-    {% endif %}
-    <h1>{{ title }}</h1>
-    {% if excerpt %}
-      <p class="article-excerpt">{{ excerpt }}</p>
-    {% endif %}
-    <div class="article-meta">
-      {% if publishedAt %}
-        <time class="article-date" datetime="{{ publishedAt }}">{{ publishedAt | date }}</time>
+<div class="blog-layout article-layout-wrapper">
+  <main class="article-main-column">
+    <article class="article-single">
+      <header class="article-header">
+        {% if categories %}
+          <span class="article-category">
+            {{ categories | join(", ") }}
+          </span>
+        {% endif %}
+        <h1>{{ title }}</h1>
+        {% if excerpt %}
+          <p class="article-excerpt">{{ excerpt }}</p>
+        {% endif %}
+        <div class="article-meta">
+          {% if publishedAt %}
+            <time class="article-date" datetime="{{ publishedAt }}">{{ publishedAt | date }}</time>
+          {% endif %}
+          <span>&bull;</span>
+          {% if profile.name %}
+            <span class="article-byline">By {{ profile.name }}</span>
+          {% endif %}
+          <span>&bull;</span>
+          <span class="article-reading-time">{{ content | readingTime }}</span>
+        </div>
+      </header>
+
+      {% if coverImage %}
+        <img class="article-cover" src="{{ coverImage }}" alt="{{ coverImageAlt | default(title) }}" width="800" height="450" loading="lazy">
       {% endif %}
-      <span>&bull;</span>
-      {% if profile.name %}
-        <span class="article-byline">By {{ profile.name }}</span>
+
+      <div class="article-body">
+        {{ content | safe }}
+      </div>
+
+      <footer class="article-footer">
+        {% if tags | length > 0 %}
+          <ul class="tag-list">
+            {% for tag in tags %}
+              <li>{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <div class="author-bio-box" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+          <div class="author-bio-info">
+            <h4 style="margin-bottom: 0.5rem; font-size: 1rem;">Written by {{ profile.name }}</h4>
+            <p style="margin: 0; color: var(--color-text-muted); font-size: 0.9375rem;">{{ profile.introduction }}</p>
+          </div>
+        </div>
+      </footer>
+    </article>
+
+    {% set nav = collections.articles | prevNextArticles(slug) %}
+    {% if nav.prev or nav.next %}
+    <nav class="article-pagination" aria-label="Article navigation">
+      {% if nav.prev %}
+        <a href="{{ nav.prev.url }}" class="prev">
+          <span class="label">&larr; Previous Article</span>
+          <span class="title">{{ nav.prev.data.title }}</span>
+        </a>
+      {% else %}
+        <span></span>
       {% endif %}
-      <span>&bull;</span>
-      <span class="article-reading-time">{{ content | readingTime }}</span>
+      {% if nav.next %}
+        <a href="{{ nav.next.url }}" class="next">
+          <span class="label">Next Article &rarr;</span>
+          <span class="title">{{ nav.next.data.title }}</span>
+        </a>
+      {% else %}
+        <span></span>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+      <h2>Related Articles</h2>
+      <div class="cards-grid">
+        {% set count = 0 %}
+        {% for art in collections.articles %}
+          {% if art.url !== page.url and count < 2 %}
+            {% include "components/article-card.njk" %}
+            {% set count = count + 1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+
+  <aside class="blog-sidebar" aria-label="Blog sidebar">
+    <div class="sidebar-widget">
+      <h3>Search</h3>
+      <form action="/search" method="get" class="sidebar-search">
+        <input type="search" name="q" placeholder="Search articles..." aria-label="Search articles">
+      </form>
     </div>
-  </header>
 
-  {% if coverImage %}
-    <img class="article-cover" src="{{ coverImage }}" alt="{{ coverImageAlt | default(title) }}" width="800" height="450" loading="lazy">
-  {% endif %}
-
-  <div class="article-body">
-    {{ content | safe }}
-  </div>
-
-  {% if tags | length > 0 %}
-    <footer class="article-footer">
-      <ul class="tag-list">
-        {% for tag in tags %}
-          <li>{{ tag }}</li>
+    {% if collections.categories and collections.categories | length > 0 %}
+    <div class="sidebar-widget">
+      <h3>Categories</h3>
+      <ul class="category-list">
+        {% for cat in collections.categories %}
+          <li><a href="/blog/categories/{{ cat | slugify }}/">{{ cat }}</a></li>
         {% endfor %}
       </ul>
-    </footer>
-  {% endif %}
-</article>
-
-{% set nav = collections.articles | prevNextArticles(slug) %}
-{% if nav.prev or nav.next %}
-<nav class="article-pagination" aria-label="Article navigation">
-  {% if nav.prev %}
-    <a href="{{ nav.prev.url }}" class="prev">
-      <span class="label">&larr; Previous Article</span>
-      <span class="title">{{ nav.prev.data.title }}</span>
-    </a>
-  {% else %}
-    <span></span>
-  {% endif %}
-  {% if nav.next %}
-    <a href="{{ nav.next.url }}" class="next">
-      <span class="label">Next Article &rarr;</span>
-      <span class="title">{{ nav.next.data.title }}</span>
-    </a>
-  {% else %}
-    <span></span>
-  {% endif %}
-</nav>
-{% endif %}
-
-{% set related = collections.articles | relatedArticles({ data: { slug: slug, categories: categories, tags: tags } }) %}
-{% if related | length > 0 %}
-  <section class="related-articles">
-    <h2>Related Articles</h2>
-    <div class="cards-grid">
-      {% for r in related %}
-        {% include "components/article-card.njk" %}
-      {% endfor %}
     </div>
-  </section>
-{% endif %}
+    {% endif %}
+
+    <div class="sidebar-widget">
+      <h3>Recent Articles</h3>
+      <ul class="recent-posts-list">
+        {% set recentCount = 0 %}
+        {% for art in collections.articles %}
+          {% if art.url !== page.url and recentCount < 3 %}
+            <li>
+              <a href="{{ art.url }}">{{ art.data.title }}</a>
+              <span class="recent-date" style="display: block; font-size: 0.75rem; color: var(--color-text-muted);">{{ art.data.publishedAt | date }}</span>
+            </li>
+            {% set recentCount = recentCount + 1 %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>
