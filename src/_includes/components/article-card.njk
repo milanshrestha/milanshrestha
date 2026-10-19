@@ -1,6 +1,6 @@
 <article class="article-card">
   {% if article.data.coverImage %}
-    <img src="{{ article.data.coverImage }}" alt="{{ article.data.coverImageAlt | default(article.data.title) }}">
+    <img src="{{ article.data.coverImage }}" alt="{{ article.data.coverImageAlt | default(article.data.title) }}" width="400" height="180" loading="lazy">
   {% endif %}
   {% if article.data.categories %}
     <span class="article-card__category">{{ article.data.categories | first }}</span>
@@ -9,7 +9,13 @@
   {% if article.data.excerpt %}
     <p class="article-card__excerpt">{{ article.data.excerpt }}</p>
   {% endif %}
-  {% if article.data.publishedAt %}
-    <time datetime="{{ article.data.publishedAt }}">{{ article.data.publishedAt | date }}</time>
-  {% endif %}
+  <div class="article-card__meta">
+    {% if article.data.publishedAt %}
+      <time datetime="{{ article.data.publishedAt }}">{{ article.data.publishedAt | date }}</time>
+    {% endif %}
+    {% if article.templateContent %}
+      <span>&bull;</span>
+      <span>{{ article.templateContent | readingTime }}</span>
+    {% endif %}
+  </div>
 </article>

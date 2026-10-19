@@ -7,6 +7,7 @@ status: "in progress"
 technologies:
   - "Software"
 role: "Developer"
+coverImage: "/images/lenevo-t470.jpg"
 featured: true
 sortOrder: 2
 repositoryUrl: ""

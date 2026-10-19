@@ -38,11 +38,11 @@ description: "Search across articles and projects."
 
   function render(q) {
     const s = q.toLowerCase();
-    const matches = all.filter(
+    const matches = s ? all.filter(
       (x) =>
         x.title.toLowerCase().includes(s) ||
         x.excerpt.toLowerCase().includes(s)
-    );
+    ) : [];
     out.innerHTML = matches.length
       ? `<ul>${matches
           .map(
@@ -53,6 +53,20 @@ description: "Search across articles and projects."
       : s ? "<p class=\"empty-state\">No results found.</p>" : "";
   }
 
-  input.addEventListener("input", () => render(input.value.trim()));
-  render("");
+  // Read query from URL on load
+  const params = new URLSearchParams(window.location.search);
+  const initialQ = params.get("q") || "";
+  if (initialQ) {
+    input.value = initialQ;
+    render(initialQ);
+  } else {
+    render("");
+  }
+
+  input.addEventListener("input", () => {
+    const val = input.value.trim();
+    render(val);
+    const url = val ? `?q=${encodeURIComponent(val)}` : window.location.pathname;
+    window.history.replaceState(null, "", url);
+  });
 </script>

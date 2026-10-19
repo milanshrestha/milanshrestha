@@ -13,7 +13,7 @@ description: "{{ seoDescription | default(summary) }}"
   </header>
 
   {% if coverImage %}
-    <img class="project-cover" src="{{ coverImage }}" alt="{{ coverImageAlt | default(title) }}">
+    <img class="project-cover" src="{{ coverImage }}" alt="{{ coverImageAlt | default(title) }}" width="800" height="450" loading="lazy">
   {% endif %}
 
   <p class="project-summary">{{ summary }}</p>

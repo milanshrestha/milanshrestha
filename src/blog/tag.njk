@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tag
+permalink: "/blog/tags/{{ tag | slugify }}/"
+layout: layouts/page.njk
+title: "Tag: {{ tag }} — Blog"
+---
+
+<h1>Tag: {{ tag }}</h1>
+<p class="page-lead">Articles tagged with "{{ tag }}"</p>
+
+<div class="cards-grid">
+  {% for article in collections.articles | filterByTag(tag) %}
+    {% include "components/article-card.njk" %}
+  {% endfor %}
+</div>
+
+<p style="margin-top: 2rem;"><a href="/blog" class="btn btn--secondary">&larr; Back to All Articles</a></p>

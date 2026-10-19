@@ -9,6 +9,7 @@ technologies:
   - "Custom CSS"
   - "Branding"
 role: "Designer & Developer"
+coverImage: "/images/laptop.jpg"
 featured: false
 sortOrder: 3
 repositoryUrl: ""

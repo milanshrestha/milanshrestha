@@ -1,3 +1,31 @@
-<footer>
-  <p>&copy; <span id="year"></span> {{ profile.name }}. Built with care from Nepal.</p>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-brand">Milan Shrestha</div>
+      <p class="footer-desc">Technology Professional, Product Builder, and Systems Thinker from Nepal.</p>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <ul class="footer-nav">
+        {% for item in navigation %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Get in Touch</h3>
+      <ul class="footer-social">
+        <li><a href="/contact">Contact Page</a></li>
+        <li><a href="mailto:contact@milanshrestha.com.np">Email</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> {{ profile.name }}. All rights reserved.</p>
+  </div>
 </footer>

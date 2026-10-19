@@ -2,17 +2,85 @@
 layout: layouts/page.njk
 title: "Blog — {{ profile.name }}"
 description: "Articles and writing by {{ profile.name }}."
+pagination:
+  data: collections.articles
+  size: 6
+  alias: articlesPage
 ---
 
 <h1>Blog</h1>
 <p class="page-lead">Selected writing on technology, product building, and systems thinking.</p>
 
-{% if collections.articles | length > 0 %}
-<div class="cards-grid">
-  {% for article in collections.articles %}
-    {% include "components/article-card.njk" %}
-  {% endfor %}
+<div class="blog-layout">
+  <main class="blog-main">
+    {% if articlesPage and articlesPage | length > 0 %}
+    <div class="cards-grid">
+      {% for article in articlesPage %}
+        {% include "components/article-card.njk" %}
+      {% endfor %}
+    </div>
+
+    <!-- Pagination controls -->
+    {% if pagination.href.previous or pagination.href.next %}
+    <nav class="pagination" aria-label="Blog pagination">
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" class="btn btn--secondary">&larr; Newer Articles</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+      <span class="pagination-status">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }}</span>
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" class="btn btn--secondary">Older Articles &rarr;</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    {% else %}
+    <p class="empty-state">No articles published yet. Check back soon.</p>
+    {% endif %}
+  </main>
+
+  <aside class="blog-sidebar" aria-label="Blog sidebar">
+    <div class="sidebar-widget">
+      <h3>Search</h3>
+      <form action="/search" method="get" class="sidebar-search">
+        <input type="search" name="q" placeholder="Search articles..." aria-label="Search articles">
+      </form>
+    </div>
+
+    {% if collections.categories and collections.categories | length > 0 %}
+    <div class="sidebar-widget">
+      <h3>Categories</h3>
+      <ul class="category-list">
+        {% for cat in collections.categories %}
+          <li><a href="/blog/categories/{{ cat | slugify }}/">{{ cat }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if collections.tags and collections.tags | length > 0 %}
+    <div class="sidebar-widget">
+      <h3>Tags</h3>
+      <ul class="tag-list">
+        {% for t in collections.tags %}
+          <li><a href="/blog/tags/{{ t | slugify }}/">{{ t }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if collections.articles and collections.articles | length > 0 %}
+    <div class="sidebar-widget">
+      <h3>Recent Articles</h3>
+      <ul class="recent-list">
+        {% for article in collections.articles | slice(0, 5) %}
+          <li><a href="{{ article.url }}">{{ article.data.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </aside>
 </div>
-{% else %}
-<p class="empty-state">No articles published yet. Check back soon.</p>
-{% endif %}

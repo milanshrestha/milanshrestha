@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+permalink: "/blog/categories/{{ category | slugify }}/"
+layout: layouts/page.njk
+title: "Category: {{ category }} — Blog"
+---
+
+<h1>Category: {{ category }}</h1>
+<p class="page-lead">Articles filed under "{{ category }}"</p>
+
+<div class="cards-grid">
+  {% for article in collections.articles | filterByCategory(category) %}
+    {% include "components/article-card.njk" %}
+  {% endfor %}
+</div>
+
+<p style="margin-top: 2rem;"><a href="/blog" class="btn btn--secondary">&larr; Back to All Articles</a></p>

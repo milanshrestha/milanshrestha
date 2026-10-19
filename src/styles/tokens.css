@@ -1,50 +1,74 @@
 :root {
-  /* Color palette - neutral backgrounds with single accent color */
-  --bgColor-default: #ffffff;
-  --fgColor-default: #111827;
-  --accent: #2563eb; /* Single primary accent color - blue */
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --surface: #f9fafb;
-  
-  /* Dark mode support (will be overridden by prefers-color-scheme) */
-  --bgColor-default-dark: #111827;
-  --fgColor-default-dark: #f9fafb;
-  --border-dark: #374151;
-  --surface-dark: #1f2937;
-  
-  /* Typography */
-  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* ==========================================================================
+     Color tokens — warm-stone palette (DESIGN.md §5)
+     ========================================================================== */
+  --color-background:    #FAFAF9; /* Main page background (warm off-white)   */
+  --color-surface:       #FFFFFF; /* Cards and content surfaces (white)       */
+  --color-text:          #1C1917; /* Primary text (warm stone)                */
+  --color-text-muted:    #57534E; /* Secondary text and metadata              */
+  --color-primary:       #2563EB; /* Links and primary actions                */
+  --color-primary-hover: #1D4ED8; /* Hover state                              */
+  --color-border:        #E7E5E4; /* Dividers and subtle outlines (warm stone) */
+  --color-focus:         #2563EB; /* Keyboard focus indicator                 */
+
+  /* Dark mode base values (cool-gray; renamed for consistency; values preserved) */
+  --color-background-dark: #111827;
+  --color-text-dark:        #f9fafb;
+  --color-border-dark:      #374151;
+  --color-surface-dark:     #1f2937;
+
+  /* ==========================================================================
+     Typography — font family (DESIGN.md §6)
+     ========================================================================== */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  
-  /* Spacing */
-  --space-0: 0;
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
-  --space-8: 3rem;
-  --space-10: 4rem;
-  
-  /* Border radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  
-  /* Transition */
-  --transition-fast: 150ms ease-in-out;
+
+  /* ==========================================================================
+     Typography — type scale (DESIGN.md §6)
+     ========================================================================== */
+  --text-hero:    3rem;       /* 48px — hero name / primary statement */
+  --text-h1:      2.5rem;     /* 40px — main page heading             */
+  --text-h2:      1.875rem;   /* 30px — major section heading         */
+  --text-h3:      1.375rem;   /* 22px — subsection heading            */
+  --text-h4:      1.125rem;   /* 18px — card title / smaller heading  */
+  --text-body:    1.0625rem;  /* 17px — article body                  */
+  --text-small:   0.875rem;   /* 14px — supporting text               */
+  --text-caption: 0.8125rem;  /* 13px — metadata and captions         */
+
+  /* ==========================================================================
+     Spacing scale (DESIGN.md §7)
+     ========================================================================== */
+  --space-1:  0.25rem;  /*  4px */
+  --space-2:  0.5rem;   /*  8px */
+  --space-3:  0.75rem;  /* 12px */
+  --space-4:  1rem;     /* 16px */
+  --space-6:  1.5rem;   /* 24px */
+  --space-8:  2rem;     /* 32px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-24: 6rem;     /* 96px */
+
+  /* ==========================================================================
+     Border radius scale (DESIGN.md §7 "Shape and elevation")
+     ========================================================================== */
+  --radius-sm: 0.375rem; /*  6px — small controls */
+  --radius-md: 0.625rem; /* 10px — cards          */
+  --radius-lg: 0.75rem;  /* 12px — larger images / hero */
+
+  /* ==========================================================================
+     Transitions (preserved — not specified in DESIGN.md §5/§6/§7)
+     ========================================================================== */
+  --transition-fast:   150ms ease-in-out;
   --transition-medium: 200ms ease-in-out;
 }
 
-/* Dark mode */
+/* Dark mode — override light tokens with dark values */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bgColor-default: var(--bgColor-default-dark);
-    --fgColor-default: var(--fgColor-default-dark);
-    --border: var(--border-dark);
-    --surface: var(--surface-dark);
+    --color-background: var(--color-background-dark);
+    --color-text:       var(--color-text-dark);
+    --color-border:     var(--color-border-dark);
+    --color-surface:    var(--color-surface-dark);
   }
 }
 
@@ -65,8 +89,8 @@
   position: absolute;
   top: -100%;
   left: 0;
-  background: var(--accent);
-  color: var(--bgColor-default);
+  background: var(--color-primary);
+  color: var(--color-background);
   padding: 0.5rem 1rem;
   z-index: 100;
   transition: top var(--transition-fast);
@@ -76,8 +100,8 @@
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: var(--accent);
-  color: var(--bgColor-default);
+  background: var(--color-primary);
+  color: var(--color-background);
   border: none;
   border-radius: var(--radius-md);
   font-weight: 500;
@@ -85,11 +109,11 @@
   text-decoration: none;
   transition: background-color var(--transition-medium);
 }
-.btn:hover { background: #1d4ed8; }
-.btn:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn:hover { background: var(--color-primary-hover); }
+.btn:focus { outline: 2px solid var(--color-focus); outline-offset: 2px; }
 .btn--secondary {
-  background: var(--surface);
-  color: var(--fgColor-default);
-  border: 1px solid var(--border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
 }
-.btn--secondary:hover { background: var(--border); }
+.btn--secondary:hover { background: var(--color-border); }

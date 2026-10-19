@@ -4,6 +4,7 @@ slug: "example-article"
 excerpt: "A short summary of this article that appears on card listings and in search results."
 publishedAt: "2026-10-18"
 status: "published"
+coverImage: "/images/laptop.jpg"
 categories:
   - "Engineering"
 tags:

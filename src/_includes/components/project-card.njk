@@ -1,6 +1,12 @@
 <article class="project-card">
+  {% if project.data.coverImage %}
+    <img src="{{ project.data.coverImage }}" alt="{{ project.data.coverImageAlt | default(project.data.title) }}" width="400" height="160" loading="lazy">
+  {% endif %}
   <h3><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
   <p class="project-card__summary">{{ project.data.summary }}</p>
+  {% if project.data.role %}
+    <p class="project-card__role"><strong>Role:</strong> {{ project.data.role }}</p>
+  {% endif %}
   {% if project.data.status %}
     <span class="project-card__status">{{ project.data.status }}</span>
   {% endif %}

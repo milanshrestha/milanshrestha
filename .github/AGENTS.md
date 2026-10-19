@@ -42,7 +42,7 @@ Follow the phased plan in `./docs/PLAN.md`:
 
 - Use 11ty with TypeScript (per `./docs/SPECS.md`)
 - Static-first approach with pre-rendered pages
-- Host on Cloudflare Pages with CI/CD workflow
+- Host on GitHub Pages with CI/CD workflow
 - Search functionality in navigation
 - Contact page with professional links only (no contact form)
 

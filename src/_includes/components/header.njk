@@ -1,9 +1,17 @@
-<header>
+<header class="site-header">
   <div class="nav-container">
-    <a class="logo" href="/">M<span>.</span></a>
+    <div class="brand-group">
+      <a class="logo" href="/">M<span>.</span></a>
+      <div class="site-identity">
+        <span class="site-title"><a href="/">Milan Shrestha</a></span>
+        <span class="site-tagline">Technology Professional & Product Builder</span>
+      </div>
+    </div>
+    
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+    
     <nav>
       <ul id="nav-list">
         {% for item in navigation %}
@@ -11,5 +19,9 @@
         {% endfor %}
       </ul>
     </nav>
+
+    <div class="header-search">
+      <a href="/search" class="search-link">Search</a>
+    </div>
   </div>
 </header>

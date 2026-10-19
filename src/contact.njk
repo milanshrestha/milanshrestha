@@ -13,7 +13,7 @@ description: "Get in touch with {{ profile.name }}: professional links and a con
     {% for link in profile.professionalLinks %}
       <li>
         <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-          <img src="{{ link.icon }}" alt="" loading="lazy">
+          <img src="{{ link.icon }}" alt="" width="48" height="48" loading="lazy">
           <span>{{ link.label }}</span>
         </a>
       </li>

@@ -6,16 +6,15 @@ description: "Milan Shrestha — Technology Professional, Product Builder, and S
 
 <section class="hero">
   {% if profile.profileImage %}
-    <img class="hero__avatar" src="{{ profile.profileImage }}" alt="{{ profile.profileImageAlt }}">
+    <img class="hero__avatar" src="{{ profile.profileImage }}" alt="{{ profile.profileImageAlt }}" width="160" height="160">
   {% endif %}
   <div class="hero__content">
     <h1>Hi, I'm Milan — you can call me M. 🦉</h1>
     <span class="hero__subtitle">{{ profile.professionalTitle }}</span>
     <p>{{ profile.introduction }}</p>
-    <blockquote>{{ profile.philosophy }}</blockquote>
     <div class="hero__actions">
       <a class="btn btn--primary" href="/projects">Explore My Work</a>
-      <a class="btn" href="/blog">Read My Writing</a>
+      <a class="btn btn--secondary" href="/blog">Read My Writing</a>
     </div>
   </div>
 </section>
