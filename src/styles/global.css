@@ -751,7 +751,6 @@ li { margin-bottom: 0.375rem; color: var(--color-text-muted); }
   overflow: hidden;
   width: 100%;
   background: var(--color-background);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .article-card img,
