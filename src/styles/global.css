@@ -134,6 +134,12 @@ li {
   position: relative;
 }
 
+.nav-actions-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .brand-group {
   display: flex;
   align-items: center;
