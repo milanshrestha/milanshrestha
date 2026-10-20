@@ -5,6 +5,13 @@
   "secondaryActionText": "Read My Writing",
   "secondaryActionUrl": "/blog",
   "workingOnHeading": "What I'm Working On",
+  "workingOn": [
+    "Building Khaancho — A next-generation classified advertising platform.",
+    "Developing full-stack web applications.",
+    "Exploring AI-assisted software development.",
+    "Creating knowledge management systems and technical documentation.",
+    "Improving business processes through technology."
+  ],
   "articlesHeading": "Articles",
   "articlesViewAllText": "View All Articles",
   "projectsHeading": "Projects",

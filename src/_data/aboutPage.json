@@ -1,12 +1,245 @@
 {
   "title": "About",
   "metaDescription": "Learn more about Milan Shrestha: background, experience, skills, and philosophy.",
+  "aboutContent": "My journey into technology wasn't conventional. I began my career in hospitality as a Front Office Receptionist, where I naturally gravitated toward solving technical problems. Through continuous self-learning and hands-on experience, I transitioned into IT and grew into an IT Manager. Today, I combine IT operations, software development, and product thinking to create technology that solves real-world problems.",
   "philosophyHeading": "Philosophy",
+  "philosophy": "I believe technology should simplify life, empower people, and solve problems that truly matter.",
   "skillsHeading": "Skills",
+  "skills": [
+    {
+      "category": "Software Development",
+      "items": [
+        "Full Stack Web Development",
+        "REST APIs",
+        "Database Design",
+        "System Architecture",
+        "Software Debugging"
+      ]
+    },
+    {
+      "category": "Product",
+      "items": [
+        "Product Strategy",
+        "MVP Planning",
+        "Systems Thinking",
+        "Business Analysis",
+        "UX-Oriented Problem Solving"
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        "Prompt Engineering",
+        "AI-Assisted Development",
+        "Workflow Automation",
+        "Knowledge Base Development"
+      ]
+    },
+    {
+      "category": "Professional",
+      "items": [
+        "Technical Documentation",
+        "Project Planning",
+        "Process Improvement",
+        "Critical Thinking",
+        "Continuous Learning"
+      ]
+    }
+  ],
   "expertiseHeading": "Areas of Expertise",
   "expertiseSubtitle": "Key areas of expertise and technical proficiencies in IT operations, infrastructure, and hospitality systems.",
+  "expertise": [
+    {
+      "category": "Network & Infrastructure",
+      "items": [
+        {
+          "name": "Network Management",
+          "description": "Designing, deploying, and maintaining robust and secure network infrastructures for optimal performance."
+        },
+        {
+          "name": "Wi-Fi Systems",
+          "description": "Expertise in managing and optimizing guest and operational Wi-Fi networks for seamless connectivity."
+        },
+        {
+          "name": "Firewalls & VPNs",
+          "description": "Implementing and configuring firewalls and VPNs to safeguard sensitive data and ensure secure remote access."
+        },
+        {
+          "name": "Servers",
+          "description": "Proficient in server deployment, configuration, maintenance, and troubleshooting for critical systems."
+        },
+        {
+          "name": "Cloud Platforms",
+          "description": "Leveraging cloud services (AWS, Azure) for scalable, flexible, and efficient IT solutions."
+        }
+      ]
+    },
+    {
+      "category": "Hospitality & Operations Systems",
+      "items": [
+        {
+          "name": "PMS",
+          "description": "Extensive experience with Property Management Systems for streamlined hotel operations and guest services."
+        },
+        {
+          "name": "POS",
+          "description": "Managing and integrating Point of Sale systems to optimize transaction processing and inventory control."
+        },
+        {
+          "name": "Access Control",
+          "description": "Implementing and managing physical and logical access control systems for enhanced security."
+        },
+        {
+          "name": "In-Room Tech",
+          "description": "Deploying and supporting in-room technology solutions for an enhanced guest experience."
+        },
+        {
+          "name": "Digital Signage",
+          "description": "Managing digital signage solutions for effective communication and branding within hospitality venues."
+        }
+      ]
+    },
+    {
+      "category": "Security & Resilience",
+      "items": [
+        {
+          "name": "Data Security",
+          "description": "Protecting sensitive information through robust security measures and adherence to data protection standards."
+        },
+        {
+          "name": "Cybersecurity",
+          "description": "Implementing comprehensive cybersecurity strategies to defend against cyber threats and ensure business continuity."
+        },
+        {
+          "name": "Disaster Recovery",
+          "description": "Developing and executing disaster recovery plans to minimize downtime and data loss."
+        }
+      ]
+    },
+    {
+      "category": "IT Management & Strategy",
+      "items": [
+        {
+          "name": "IT Project Mgmt",
+          "description": "Leading IT projects from conception to completion, ensuring timely delivery and successful outcomes."
+        },
+        {
+          "name": "Vendor Management",
+          "description": "Managing vendor relationships and IT procurement for cost-effective and high-quality technology solutions."
+        },
+        {
+          "name": "Budgeting",
+          "description": "Strategic planning and management of IT budgets to optimize expenditure and maximize ROI."
+        },
+        {
+          "name": "Help Desk",
+          "description": "Providing efficient and effective technical support to staff and guests, resolving issues promptly."
+        },
+        {
+          "name": "IT Policy",
+          "description": "Developing and enforcing IT policies and procedures to ensure operational efficiency and compliance."
+        }
+      ]
+    }
+  ],
   "hotelTechHeading": "Hotel Technology Services",
   "hotelTechSubtitle": "Highlighting key services and technical operations that IT often overlooks in hotels.",
+  "hotelTechnologies": [
+    {
+      "category": "Infrastructure & Guest Connectivity",
+      "items": [
+        {
+          "name": "Wi-Fi & Network Management",
+          "description": "Ensuring seamless and secure internet access for guests is a top priority. We manage network infrastructure, bandwidth allocation, and security protocols to provide a reliable and high-performance Wi-Fi experience."
+        },
+        {
+          "name": "In-Room Technology & Entertainment",
+          "description": "Enhance the guest experience with modern in-room technology, including smart TVs, casting solutions, and IoT devices. We ensure these systems are user-friendly, reliable, and secure."
+        }
+      ]
+    },
+    {
+      "category": "Core Operations & Systems",
+      "items": [
+        {
+          "name": "PMS & POS System Integration",
+          "description": "We integrate and maintain Property Management Systems (PMS) and Point of Sale (POS) systems to streamline hotel operations, from reservations and billing to inventory management and reporting."
+        },
+        {
+          "name": "Backup & Disaster Recovery",
+          "description": "Business continuity is crucial. We design and maintain reliable backup and disaster recovery plans to ensure that critical hotel data and systems can be restored quickly in the event of an outage or cyber-attack."
+        }
+      ]
+    },
+    {
+      "category": "Security & Governance",
+      "items": [
+        {
+          "name": "Data Security & Privacy Compliance",
+          "description": "Protecting sensitive guest data is paramount. We implement robust security measures and ensure compliance with data privacy regulations like GDPR and CCPA to build trust and avoid costly penalties."
+        },
+        {
+          "name": "Vendor Management & IT Procurement",
+          "description": "We manage relationships with technology vendors and oversee the procurement process to ensure that the hotel invests in the right technology at the right price, maximizing ROI and minimizing risk."
+        }
+      ]
+    },
+    {
+      "category": "Commercial & Guest Experience",
+      "items": [
+        {
+          "name": "Online Travel Agency (OTA) & Channel Management",
+          "description": "We manage the hotel's presence on OTAs like Booking.com and Expedia, and use channel managers to synchronize rates and availability across all platforms, maximizing occupancy and revenue."
+        },
+        {
+          "name": "Digital Marketing & SEO",
+          "description": "We drive direct bookings and increase brand visibility through a comprehensive digital marketing strategy, including search engine optimization (SEO), social media marketing, and email campaigns."
+        },
+        {
+          "name": "Reputation & Review Management",
+          "description": "We monitor and manage the hotel's online reputation on platforms like TripAdvisor and Google, responding to guest reviews and using feedback to improve the guest experience and attract new customers."
+        }
+      ]
+    }
+  ],
   "experienceHeading": "Experience",
-  "learningHeading": "Current Learning"
+  "experience": [
+    {
+      "id": "it-officer",
+      "organization": "Hotel Shanker",
+      "role": "IT Manager",
+      "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
+      "startDate": "2021",
+      "isCurrent": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "front-office-receptionist",
+      "organization": "Hotel Nature",
+      "role": "Front Office Receptionist",
+      "description": "Guest Relations, Reservation Management, Customer Service, and Cross-department Coordination.",
+      "startDate": "2018",
+      "endDate": "2021",
+      "isCurrent": false,
+      "sortOrder": 2
+    },
+    {
+      "id": "cable-tv-technician",
+      "organization": "Nexus Pvt. Ltd.",
+      "role": "Cable TV System Technician",
+      "description": "Satellite TV Installation, CATV/SMATV Systems, RF Signal Troubleshooting, and Technical Field Support.",
+      "startDate": "2015",
+      "endDate": "2018",
+      "isCurrent": false,
+      "sortOrder": 3
+    }
+  ],
+  "learningHeading": "Current Learning",
+  "learning": [
+    "Software Architecture",
+    "Scalable System Design",
+    "AI Engineering",
+    "Product Management",
+    "Cloud Technologies"
+  ]
 }

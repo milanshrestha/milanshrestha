@@ -16,7 +16,7 @@ description: "Get in touch with Milan Shrestha: professional links and contact d
     <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.9375rem;">{{ contactPage.channelsSubtitle }}</p>
 
     <ul class="links-grid">
-      {% for link in profile.professionalLinks %}
+      {% for link in contactPage.professionalLinks %}
         <li>
           <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
             <img src="{{ link.icon }}" alt="" width="40" height="40" loading="lazy">
