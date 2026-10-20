@@ -1,5 +1,7 @@
 {
   "greeting": "Hi, I'm Milan — you can call me M. 🦉",
+  "profileImage": "/images/profile.jpg",
+  "profileImageAlt": "Milan Shrestha",
   "primaryActionText": "Explore My Work",
   "primaryActionUrl": "/projects",
   "secondaryActionText": "Read My Writing",
