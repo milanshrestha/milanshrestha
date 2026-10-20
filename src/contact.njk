@@ -1,20 +1,20 @@
 ---
 layout: layouts/page.njk
-title: "Contact — {{ profile.name }}"
+title: "{{ contactPage.title }} — {{ profile.name }}"
 description: "Get in touch with {{ profile.name }}: professional links and contact details."
 ---
 
-<h1>Contact</h1>
-<p class="page-lead">Looking to collaborate, share ideas, or build something meaningful together?</p>
+<h1>{{ contactPage.title }}</h1>
+<p class="page-lead">{{ contactPage.lead }}</p>
 
 <section class="contact-section">
-  <h2>Get in Touch</h2>
-  <p>You can reach out through any of my professional channels below. I am always open to discussing new projects, software engineering, product building, and systems architecture.</p>
-  
+  <h2>{{ contactPage.getInTouchHeading }}</h2>
+  <p>{{ contactPage.getInTouchText }}</p>
+
   <div class="contact-info-card" style="margin: 2rem 0; padding: 2rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);">
-    <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.5rem;">Professional Channels</h3>
-    <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.9375rem;">Connect with me directly across my verified public profiles.</p>
-    
+    <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.5rem;">{{ contactPage.channelsHeading }}</h3>
+    <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.9375rem;">{{ contactPage.channelsSubtitle }}</p>
+
     <ul class="links-grid">
       {% for link in profile.professionalLinks %}
         <li>

@@ -1,11 +1,11 @@
 ---
 layout: layouts/page.njk
-title: "Projects — {{ profile.name }}"
+title: "{{ projectsPage.title }} — {{ profile.name }}"
 description: "Selected projects by {{ profile.name }}: products, case studies, and ongoing work."
 ---
 
-<h1>Projects</h1>
-<p class="page-lead">Selected work — products, case studies, experiments, and ongoing contributions.</p>
+<h1>{{ projectsPage.title }}</h1>
+<p class="page-lead">{{ projectsPage.lead }}</p>
 
 {% if collections.projects | length > 0 %}
   <div class="cards-grid">

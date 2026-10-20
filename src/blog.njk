@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: "Blog — {{ profile.name }}"
+title: "{{ blogPage.title }} — {{ profile.name }}"
 description: "Articles and writing by {{ profile.name }}."
 pagination:
   data: collections.articles
@@ -8,8 +8,8 @@ pagination:
   alias: articlesPage
 ---
 
-<h1>Blog</h1>
-<p class="page-lead">Selected writing on technology, product building, and systems thinking.</p>
+<h1>{{ blogPage.title }}</h1>
+<p class="page-lead">{{ blogPage.lead }}</p>
 
 <div class="blog-layout">
   <main class="blog-main">
@@ -38,7 +38,7 @@ pagination:
     {% endif %}
 
     {% else %}
-    <p class="empty-state">No articles published yet. Check back soon.</p>
+    <p class="empty-state">{{ blogPage.emptyState }}</p>
     {% endif %}
   </main>
 

@@ -1,0 +1,15 @@
+{
+  "greeting": "Hi, I'm Milan — you can call me M. 🦉",
+  "primaryActionText": "Explore My Work",
+  "primaryActionUrl": "/projects",
+  "secondaryActionText": "Read My Writing",
+  "secondaryActionUrl": "/blog",
+  "workingOnHeading": "What I'm Working On",
+  "articlesHeading": "Articles",
+  "articlesViewAllText": "View All Articles",
+  "projectsHeading": "Projects",
+  "projectsViewAllText": "View All Projects",
+  "aboutHeading": "About",
+  "aboutViewAllText": "Read Full Bio",
+  "aboutText": "Self-taught technology professional and systems thinker from Nepal. Passionate about building practical software, resilient infrastructure, and open-source contributions that improve everyday life."
+}
