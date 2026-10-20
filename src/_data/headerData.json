@@ -1,3 +1,6 @@
 {
-  "siteTagline": "IT Manager by day — Programmer by night"
+  "siteTagline": "IT Manager by day — Programmer by night",
+  "logoText": "M",
+  "logoAccent": ".",
+  "faviconUrl": "/images/logo-m.svg"
 }

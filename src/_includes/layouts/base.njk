@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ description | default(profile.introduction) }}">
     <title>{% if title and title != profile.name %}{{ title }} — {{ profile.name }}{% else %}{{ profile.name }}{% endif %}</title>
+    <link rel="icon" href="{{ headerData.faviconUrl }}" type="image/svg+xml">
     <link rel="stylesheet" href="/styles/tokens.css">
     <link rel="stylesheet" href="/styles/global.css">
   </head>
