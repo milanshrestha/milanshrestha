@@ -1360,6 +1360,17 @@ li { margin-bottom: 0.375rem; color: var(--color-text-muted); }
   width: 40px;
   height: 40px;
   object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
+[data-theme="dark"] .links-grid li img {
+  filter: brightness(0) invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .links-grid li img {
+    filter: brightness(0) invert(1);
+  }
 }
 .links-grid li span {
   font-size: 0.9375rem;
