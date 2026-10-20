@@ -49,6 +49,26 @@ description: "Learn more about {{ profile.name }}: background, experience, skill
 </section>
 
 <section>
+  <h2>Hotel Technology Services</h2>
+  <p class="page-lead expertise-lead">Highlighting key services and technical operations that IT often overlooks in hotels.</p>
+  <div class="skills-grid">
+    {% for group in profile.hotelTechnologies %}
+      <div class="skill-category">
+        <h3>{{ group.category }}</h3>
+        <div class="expertise-items">
+          {% for item in group.items %}
+            <div class="expertise-item">
+              <span class="expertise-item-title">{{ item.name }}</span>
+              <p class="expertise-item-desc">{{ item.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
   <h2>Experience</h2>
   <div class="experience-list">
     {% for job in profile.experience | sort(attribute="sortOrder") %}
