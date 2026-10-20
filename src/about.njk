@@ -29,6 +29,26 @@ description: "Learn more about {{ profile.name }}: background, experience, skill
 </section>
 
 <section>
+  <h2>Areas of Expertise</h2>
+  <p class="page-lead" style="font-size: 1rem; margin-bottom: 1.5rem;">Key areas of expertise and technical proficiencies in IT operations, infrastructure, and hospitality systems.</p>
+  <div class="skills-grid">
+    {% for group in profile.expertise %}
+      <div class="skill-category">
+        <h3>{{ group.category }}</h3>
+        <div class="expertise-items" style="display: flex; flex-direction: column; gap: 0.875rem; margin-top: 0.75rem;">
+          {% for item in group.items %}
+            <div class="expertise-item">
+              <strong style="display: block; color: var(--color-text); font-size: 0.9375rem; margin-bottom: 0.125rem;">{{ item.name }}</strong>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0; line-height: 1.5;">{{ item.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
   <h2>Experience</h2>
   <div class="experience-list">
     {% for job in profile.experience | sort(attribute="sortOrder") %}

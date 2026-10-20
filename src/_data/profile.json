@@ -77,6 +77,100 @@
       ]
     }
   ],
+  "expertise": [
+    {
+      "category": "Network & Infrastructure",
+      "items": [
+        {
+          "name": "Network Management",
+          "description": "Designing, deploying, and maintaining robust and secure network infrastructures for optimal performance."
+        },
+        {
+          "name": "Wi-Fi Systems",
+          "description": "Expertise in managing and optimizing guest and operational Wi-Fi networks for seamless connectivity."
+        },
+        {
+          "name": "Firewalls & VPNs",
+          "description": "Implementing and configuring firewalls and VPNs to safeguard sensitive data and ensure secure remote access."
+        },
+        {
+          "name": "Servers",
+          "description": "Proficient in server deployment, configuration, maintenance, and troubleshooting for critical systems."
+        },
+        {
+          "name": "Cloud Platforms",
+          "description": "Leveraging cloud services (AWS, Azure) for scalable, flexible, and efficient IT solutions."
+        }
+      ]
+    },
+    {
+      "category": "Hospitality & Operations Systems",
+      "items": [
+        {
+          "name": "PMS",
+          "description": "Extensive experience with Property Management Systems for streamlined hotel operations and guest services."
+        },
+        {
+          "name": "POS",
+          "description": "Managing and integrating Point of Sale systems to optimize transaction processing and inventory control."
+        },
+        {
+          "name": "Access Control",
+          "description": "Implementing and managing physical and logical access control systems for enhanced security."
+        },
+        {
+          "name": "In-Room Tech",
+          "description": "Deploying and supporting in-room technology solutions for an enhanced guest experience."
+        },
+        {
+          "name": "Digital Signage",
+          "description": "Managing digital signage solutions for effective communication and branding within hospitality venues."
+        }
+      ]
+    },
+    {
+      "category": "Security & Resilience",
+      "items": [
+        {
+          "name": "Data Security",
+          "description": "Protecting sensitive information through robust security measures and adherence to data protection standards."
+        },
+        {
+          "name": "Cybersecurity",
+          "description": "Implementing comprehensive cybersecurity strategies to defend against cyber threats and ensure business continuity."
+        },
+        {
+          "name": "Disaster Recovery",
+          "description": "Developing and executing disaster recovery plans to minimize downtime and data loss."
+        }
+      ]
+    },
+    {
+      "category": "IT Management & Strategy",
+      "items": [
+        {
+          "name": "IT Project Mgmt",
+          "description": "Leading IT projects from conception to completion, ensuring timely delivery and successful outcomes."
+        },
+        {
+          "name": "Vendor Management",
+          "description": "Managing vendor relationships and IT procurement for cost-effective and high-quality technology solutions."
+        },
+        {
+          "name": "Budgeting",
+          "description": "Strategic planning and management of IT budgets to optimize expenditure and maximize ROI."
+        },
+        {
+          "name": "Help Desk",
+          "description": "Providing efficient and effective technical support to staff and guests, resolving issues promptly."
+        },
+        {
+          "name": "IT Policy",
+          "description": "Developing and enforcing IT policies and procedures to ensure operational efficiency and compliance."
+        }
+      ]
+    }
+  ],
   "experience": [
     {
       "id": "it-officer",
