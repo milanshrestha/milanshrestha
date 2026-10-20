@@ -1,11 +1,12 @@
 {
   "description": "Technology Professional, Product Builder, and Systems Thinker from Nepal.",
-  "navigationHeading": "Navigation",
+  "navigationHeading": "Site Links",
   "getInTouchHeading": "Get in Touch",
   "socialLinks": [
     { "label": "Contact Page", "url": "/contact" },
     { "label": "Email", "url": "mailto:contact@milanshrestha.com.np" },
     { "label": "GitHub", "url": "https://github.com/milanshrestha", "external": true },
     { "label": "X", "url": "https://x.com/AlwaysCoolMilan", "external": true }
-  ]
+  ],
+  "copyrightNotice": "All rights reserved."
 }
