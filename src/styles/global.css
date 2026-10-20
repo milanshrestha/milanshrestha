@@ -525,6 +525,39 @@ li { margin-bottom: 0.375rem; color: var(--color-text-muted); }
 }
 .skill-category li:last-child { border-bottom: none; }
 
+/* Expertise */
+.expertise-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin-top: 0.75rem;
+}
+.expertise-item {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.expertise-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.expertise-item-title {
+  display: block;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+.expertise-item-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+.expertise-lead {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Experience */
 .experience-list {
   display: flex;
