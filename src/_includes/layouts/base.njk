@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ description | default(profile.introduction) }}">
-    <title>{{ title | default(profile.name) }}</title>
+    <title>{% if title and title != profile.name %}{{ title }} — {{ profile.name }}{% else %}{{ profile.name }}{% endif %}</title>
     <link rel="stylesheet" href="/styles/tokens.css">
     <link rel="stylesheet" href="/styles/global.css">
   </head>
@@ -48,7 +48,7 @@
         ],
         projects: [
           {% for p in collections.projects %}
-            { title: "{{ p.data.title | replace('"', '\\"') }}", url: "{{ p.url }}", excerpt: "{{ p.data.summary | default('') | replace('"', '\\"') }}", type: "project" },
+            { title: "{{ p.data.title | replace('"', '\\"') }}", url: "{{ p.url }}", excerpt: "{{ p.data.summary | replace('"', '\\"') }}", type: "project" },
           {% endfor %}
         ]
       };

@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: "Milan Shrestha — Technology Professional | Product Builder"
+title: ""
 description: "Milan Shrestha — Technology Professional, Product Builder, and Systems Thinker from Nepal. Building Khaancho, a next-generation classified advertising platform."
 ---
 
@@ -9,18 +9,18 @@ description: "Milan Shrestha — Technology Professional, Product Builder, and S
     <img class="hero__avatar" src="{{ profile.profileImage }}" alt="{{ profile.profileImageAlt }}" width="160" height="160">
   {% endif %}
   <div class="hero__content">
-    <h1>Hi, I'm Milan — you can call me M. 🦉</h1>
+    <h1>{{ homePage.greeting }}</h1>
     <span class="hero__subtitle">{{ profile.professionalTitle }}</span>
     <p>{{ profile.introduction }}</p>
     <div class="hero__actions">
-      <a class="btn btn--primary" href="/projects">Explore My Work</a>
-      <a class="btn btn--secondary" href="/blog">Read My Writing</a>
+      <a class="btn btn--primary" href="{{ homePage.primaryActionUrl }}">{{ homePage.primaryActionText }}</a>
+      <a class="btn btn--secondary" href="{{ homePage.secondaryActionUrl }}">{{ homePage.secondaryActionText }}</a>
     </div>
   </div>
 </section>
 
 <section id="working-on">
-  <h2>What I'm Working On</h2>
+  <h2>{{ homePage.workingOnHeading }}</h2>
   <ul class="working-on">
     {% for item in profile.workingOn %}
       <li>{{ item }}</li>
@@ -31,8 +31,8 @@ description: "Milan Shrestha — Technology Professional, Product Builder, and S
 {% if collections.articles | length > 0 %}
 <section id="articles">
   <div class="section-header">
-    <h2>Articles</h2>
-    <a href="/blog">View All Articles</a>
+    <h2>{{ homePage.articlesHeading }}</h2>
+    <a href="/blog">{{ homePage.articlesViewAllText }}</a>
   </div>
   <div class="cards-grid">
     {% for article in collections.articles | sort(attribute="date", reverse=true) | slice(0, 3) %}
@@ -45,8 +45,8 @@ description: "Milan Shrestha — Technology Professional, Product Builder, and S
 {% if collections.projects | length > 0 %}
 <section id="projects">
   <div class="section-header">
-    <h2>Projects</h2>
-    <a href="/projects">View All Projects</a>
+    <h2>{{ homePage.projectsHeading }}</h2>
+    <a href="/projects">{{ homePage.projectsViewAllText }}</a>
   </div>
   <div class="cards-grid">
     {% for project in collections.projects | sort(attribute="sortOrder") | slice(0, 3) %}
@@ -58,10 +58,10 @@ description: "Milan Shrestha — Technology Professional, Product Builder, and S
 
 <section id="summary">
   <div class="section-header">
-    <h2>About</h2>
-    <a href="/about">Learn More</a>
+    <h2>{{ homePage.aboutHeading }}</h2>
+    <a href="/about">{{ homePage.aboutViewAllText }}</a>
   </div>
-  <p>{{ profile.aboutContent }}</p>
+  <p>{{ homePage.aboutText }}</p>
 </section>
 
 <section id="contact-cta">
