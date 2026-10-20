@@ -9,7 +9,7 @@ if (savedTheme) {
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    const currentTheme = root.getAttribute("data-theme") || 
+    const currentTheme = root.getAttribute("data-theme") ||
       (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", newTheme);
@@ -121,6 +121,35 @@ if (modalSearchInput && window.siteSearchIndex) {
     modalSearchResults.innerHTML = html;
   });
 }
+
+// Sidebar Search Integration
+const sidebarSearchForms = document.querySelectorAll(".sidebar-search");
+sidebarSearchForms.forEach((form) => {
+  const input = form.querySelector("input");
+  if (input) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+    input.addEventListener("focus", (e) => {
+      e.preventDefault();
+      openSearchModal();
+      if (input.value && modalSearchInput) {
+        modalSearchInput.value = input.value;
+        modalSearchInput.dispatchEvent(new Event("input"));
+      }
+      input.blur();
+    });
+    input.addEventListener("input", (e) => {
+      const val = input.value;
+      openSearchModal();
+      if (modalSearchInput) {
+        modalSearchInput.value = val;
+        modalSearchInput.dispatchEvent(new Event("input"));
+      }
+      input.value = "";
+    });
+  }
+});
 
 // Year in footer
 const yearEl = document.getElementById("year");
