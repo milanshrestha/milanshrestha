@@ -232,9 +232,10 @@
   "experience": [
     {
       "id": "it-officer",
-      "organization": "Hotel Nature",
-      "role": "IT Officer",
+      "organization": "Hotel Shanker",
+      "role": "IT Manager",
       "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
+      "startDate": "2021",
       "isCurrent": true,
       "sortOrder": 1
     },
@@ -243,6 +244,8 @@
       "organization": "Hotel Nature",
       "role": "Front Office Receptionist",
       "description": "Guest Relations, Reservation Management, Customer Service, and Cross-department Coordination.",
+      "startDate": "2018",
+      "endDate": "2021",
       "isCurrent": false,
       "sortOrder": 2
     },
@@ -251,6 +254,8 @@
       "organization": "Nexus Pvt. Ltd.",
       "role": "Cable TV System Technician",
       "description": "Satellite TV Installation, CATV/SMATV Systems, RF Signal Troubleshooting, and Technical Field Support.",
+      "startDate": "2015",
+      "endDate": "2018",
       "isCurrent": false,
       "sortOrder": 3
     }

@@ -75,6 +75,11 @@ description: "Learn more about Milan Shrestha: background, experience, skills, a
       <div class="job">
         <div class="job__meta">
           <span class="job__role">{{ job.role }}</span>
+          <span class="job__period">
+            {% if job.startDate %}
+              {{ job.startDate }} — {% if job.isCurrent %}Present{% else %}{{ job.endDate }}{% endif %}
+            {% endif %}
+          </span>
           {% if job.isCurrent %}<span class="job__current">Current</span>{% endif %}
         </div>
         <h3>{{ job.organization }}</h3>
