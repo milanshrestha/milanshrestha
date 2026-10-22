@@ -15,7 +15,7 @@ Instructions to Write and Plan Web Content for the Project.
 - File name `example-content.md`
 - Separate in two Section:
 	- 1. Extracted content
-	- 2. Plan content with mapping placement or replacement to existing content
+	- 2. Plan/Suggest content with mapping placement or replacement (Adding or Incorporate) to existing content
 
 # Example Draft Format (Or, refer existing file for reference)
 
