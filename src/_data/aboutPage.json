@@ -208,7 +208,7 @@
       "id": "it-manager",
       "organization": "Hotel Shanker",
       "role": "IT Manager",
-      "description": "Manages hotel IT infrastructure, systems, networks, security, and technology operations.",
+      "description": "Manages Hotel IT Infrastructure, Systems, Networks, Security, and Technology Operations.",
       "startDate": "2014",
       "isCurrent": true,
       "sortOrder": 1
@@ -217,7 +217,7 @@
       "id": "it-officer",
       "organization": "Hotel Shanker",
       "role": "IT Officer",
-      "description": "Maintains hotel IT systems, servers, networks, devices, and technical support services.",
+      "description": "Maintains Hotel IT Systems, Servers, Networks, Devices, and Technical Support Services.",
       "startDate": "2010",
       "endDate": "2013",
       "isCurrent": false,
@@ -227,7 +227,7 @@
       "id": "front-office-cashier",
       "organization": "Hotel Shanker",
       "role": "Front Office Cashier",
-      "description": "Handles guest billing, payments, cashiering, and front office administrative support.",
+      "description": "Handles Guest Billing, Payments, Cashiering, Inquiries, and Front Office Operational Support.",
       "startDate": "2003",
       "endDate": "2009",
       "isCurrent": false,
@@ -260,6 +260,7 @@
     "Scalable System Design",
     "AI Engineering",
     "Product Management",
-    "Cloud Technologies"
+    "Cloud Technologies",
+    "Website Design"
   ]
 }
