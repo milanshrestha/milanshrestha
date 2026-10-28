@@ -205,7 +205,7 @@
   "experienceHeading": "Experience",
   "experience": [
     {
-      "id": "it-officer",
+      "id": "it-manager",
       "organization": "Hotel Shanker",
       "role": "IT Manager",
       "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
@@ -213,6 +213,16 @@
       "isCurrent": true,
       "sortOrder": 1
     },
+    {
+      "id": "it-officer",
+      "organization": "Hotel Shanker",
+      "role": "IT Officer",
+      "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
+      "startDate": "2021",
+      "endDate": "2021",
+      "isCurrent": false,
+      "sortOrder": 1
+    },    
     {
       "id": "front-office-receptionist",
       "organization": "Hotel Nature",
