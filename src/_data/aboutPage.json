@@ -208,8 +208,8 @@
       "id": "it-manager",
       "organization": "Hotel Shanker",
       "role": "IT Manager",
-      "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
-      "startDate": "2021",
+      "description": "Manages hotel IT infrastructure, systems, networks, security, and technology operations.",
+      "startDate": "2014",
       "isCurrent": true,
       "sortOrder": 1
     },
@@ -217,19 +217,29 @@
       "id": "it-officer",
       "organization": "Hotel Shanker",
       "role": "IT Officer",
-      "description": "IT Operations, Technical Support, Knowledge Base Management, Process Automation, and System Administration.",
-      "startDate": "2021",
-      "endDate": "2021",
+      "description": "Maintains hotel IT systems, servers, networks, devices, and technical support services.",
+      "startDate": "2010",
+      "endDate": "2013",
       "isCurrent": false,
       "sortOrder": 1
-    },    
+    },
+    {
+      "id": "front-office-cashier",
+      "organization": "Hotel Shanker",
+      "role": "Front Office Cashier",
+      "description": "Handles guest billing, payments, cashiering, and front office administrative support.",
+      "startDate": "2003",
+      "endDate": "2009",
+      "isCurrent": false,
+      "sortOrder": 1
+    },        
     {
       "id": "front-office-receptionist",
       "organization": "Hotel Nature",
       "role": "Front Office Receptionist",
       "description": "Guest Relations, Reservation Management, Customer Service, and Cross-department Coordination.",
-      "startDate": "2018",
-      "endDate": "2021",
+      "startDate": "2001",
+      "endDate": "2002",
       "isCurrent": false,
       "sortOrder": 2
     },
@@ -238,8 +248,8 @@
       "organization": "Nexus Pvt. Ltd.",
       "role": "Cable TV System Technician",
       "description": "Satellite TV Installation, CATV/SMATV Systems, RF Signal Troubleshooting, and Technical Field Support.",
-      "startDate": "2015",
-      "endDate": "2018",
+      "startDate": "1999",
+      "endDate": "2000",
       "isCurrent": false,
       "sortOrder": 3
     }
